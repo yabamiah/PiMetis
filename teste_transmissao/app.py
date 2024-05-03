@@ -24,6 +24,8 @@ def video_feed():
 
 def create_ngrok_server():
     http_tunnel = ngrok.connect(proto="http", addr="5000")
+    with open("../servidor_link.txt", '+w') as file:
+        file.write(http_tunnel.public_url)
     print(" * Link do servidor ngrok: \"{}\" -> \"http://127.0.0.1\"".format(http_tunnel.public_url))
 
 if __name__ == '__main__':
