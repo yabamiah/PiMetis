@@ -18,15 +18,9 @@ while(not cv2.waitKey(20) & 0xFF == ord('q')):
         for x, y, w, h in faces_frontal:
             cv2.rectangle(frame, (x, y), (x+w, y+h), (255, 0, 0))
 
-        # faces_profile = profile_face_cascade.detectMultiScale(gray)
-
-        # # TODO: Desenhar retangulo
-        # for x, y, w, h in faces_profile:
-        #     cv2.rectangle(frame, (x, y), (x+w, y+h), (255, 0, 0))
-
         # Visualizar
         cv2.imshow('frame',frame)
-q
+
 # Desligar a webcam
 cap.release()
 
