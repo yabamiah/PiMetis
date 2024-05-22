@@ -22,5 +22,5 @@ url1 = f"https://api.telegram.org/bot{TOKEN}/getUpdates"
 url2 = f"https://api.telegram.org/bot{TOKEN}/sendMessage?chat_id={chat_id_vn}&text={message}"
 url3 = f"https://api.telegram.org/bot{TOKEN}/sendPhoto?chat_id={chat_id_vn}"
 
-print(requests.get(url2).json())
+print(requests.get(url1).json())
 # print(requests.post(url3, files={'photo': img}).json())

@@ -11,57 +11,60 @@ int main(int argc, char *argv[])
 
     while (std::getline(coco_names, linha))
     {
-        nomes.push_pack(linha);
+        nomes.push_back(linha);
     }
 
-    cv::dnn::Net net cv::dnn::readNetFromDarknet("yolov4-tiny.weights", "yolov4-tiny.cfg");
+    cv::dnn::Net net;
+    net = cv::dnn::readNetFromDarknet("yolov4-tiny.cfg", "yolov4-tiny.weights");
 
-    cv::dnn:DetectionModel model = cv::dnn::DetectionModel(net);
+    cv::dnn::DetectionModel model = cv::dnn::DetectionModel(net);
     model.setInputParams( 1/255.0, cv::Size(416, 416), cv::Scalar(), true);
 
 	cv::VideoCapture camera;
     cv::Mat frame;
-    bool cap = camera.open(0);
+    bool cap = camera.open(0, cv::CAP_V4L);
 
-    std::vector<std::vector<int>> colors = {{0, 255, 0}, {0, 0, 255}, {255, 0, 0},
-                   {255, 255, 0}, {255, 0, 255}, {0, 255, 255}};
+    std::vector<cv::Scalar> colors = {cv::Scalar(0, 255, 0), cv::Scalar(0, 0, 255), cv::Scalar(255, 0, 0),
+                                    cv::Scalar(255, 255, 0), cv::Scalar(255, 0, 255), cv::Scalar(0, 255, 255)};                                    
 
-    if (cap)
+    while (true)
     {
-        while (true)
+        camera.read(frame);
+        if (frame.empty())
         {
-            bool ret = camera.read();
-            cap >> frame;
-            if (!ret)
-            {
-                break;
-            }
+            std::cout << "Fim da transmissão\n";
+            break;
+        }
 
-            std::vector<int> classes;
-            std::vector<float> scores;
-            std::vector<cv::Rect> boxes;
+        // cap >> frame;
 
-            model.detect(frame, classes, scores, boxes, 0.6, 0.4);
+        std::vector<int> classes;
+        std::vector<float> scores;
+        std::vector<cv::Rect> boxes;
 
-            for (int i = 0; i < classes.size(); i++)
-            {
-                color = colors[i % colors.size()];
+        model.detect(frame, classes, scores, boxes, 0.6, 0.4);
 
-                cv::rectangle(frame, boxes[i], color);
+        for (int i = 0; i < classes.size(); i++)
+        {
+            const auto color = colors[i % colors.size()];
+            char text[100];
 
-                char label[100];
-                snprintf(text, sizeof(label), "%s: %.2f", nomes[classes[i]].c_str(), scores[i]);
-                cv::putText(frame, label, cv::Point(boxes[i].x, boxes[i].y - 10), cv::FONT_HERSHEY_SIMPLEX, 1, cv::Scalar(0, 255, 0), 2);
+            cv::rectangle(frame, boxes[i], color, 3);
+            char label[100];
+            snprintf(text, sizeof(label), "%s: %.2f", nomes[classes[i]].c_str(), scores[i]);
+            cv::putText(frame, label, cv::Point(boxes[i].x, boxes[i].y - 10), cv::FONT_HERSHEY_SIMPLEX, 1, cv::Scalar(0, 255, 0), 2);
                 
-                cv::imshow('frame', frame);
+            cv::imshow("frame", frame);
 
-                auto key = (char) cv::waitKey(1);
-                if (key == 27)
-                    break;
+            if(cv::waitKey(1) != -1)
+            {
+                camera.release();
+                std::cout << "Terminado pelo usuário\n";
+                break;
             }
         }
     }
-    cap.release();
+    
     cv::destroyAllWindows();
     return 0;
 }
