@@ -6,7 +6,7 @@ COLORS = [(0, 255, 0), (0, 0, 255), (255, 0, 0),
           (255, 255, 0), (255, 0, 255), (0, 255, 255)]
 
 nomes = []
-with open('coco.names', 'r') as file:
+with open('pimetis.names', 'r') as file:
     nomes = [nome.strip() for nome in file.readlines()]
 
 net = cv.dnn.readNet('yolov4-tiny.weights', 'yolov4-tiny.cfg')
@@ -25,10 +25,12 @@ while True:
     for (classid, score, box) in zip(classes, scores, boxes):
         color = COLORS[int(classid) % len(COLORS)]
         label = "%s : %f" % (nomes[classid], score)
-        cv.rectangle(frame, box, color, 1)
-        cv.putText(frame, label, (box[0], box[1]-10),
-                   cv.FONT_HERSHEY_COMPLEX, 0.3, color, 1)
 
+        if nomes[classid] != "hide":
+            cv.rectangle(frame, box, color, 1)
+            cv.putText(frame, label, (box[0], box[1]-10),
+                           cv.FONT_HERSHEY_COMPLEX, 0.3, color, 1)
+        
     cv.imshow('frame', frame)
     key = cv.waitKey(1)
     if key == ord('q'):
