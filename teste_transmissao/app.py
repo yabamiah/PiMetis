@@ -33,5 +33,5 @@ if __name__ == '__main__':
     t1.start()
     t1.join()
 
-    app.run()
+    app.run(port=5000)
     app.debug = True

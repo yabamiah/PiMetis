@@ -47,12 +47,12 @@ int main(int argc, char *argv[])
         for (int i = 0; i < classes.size(); i++)
         {
             const auto color = colors[i % colors.size()];
-            char text[100];
+            cv::rectangle(frame, boxes[i], color, 2);
 
-            cv::rectangle(frame, boxes[i], color, 3);
             char label[100];
-            snprintf(text, sizeof(label), "%s: %.2f", nomes[classes[i]].c_str(), scores[i]);
-            cv::putText(frame, label, cv::Point(boxes[i].x, boxes[i].y - 10), cv::FONT_HERSHEY_SIMPLEX, 1, cv::Scalar(0, 255, 0), 2);
+            snprintf(label, sizeof(label), "%s: %.2f", nomes[classes[i]].c_str(), scores[i]);
+	  
+            cv::putText(frame, label, cv::Point(boxes[i].x, boxes[i].y - 5), cv::FONT_HERSHEY_SIMPLEX, 1, cv::Scalar(0, 255, 0), 1);
                 
             cv::imshow("frame", frame);
 
