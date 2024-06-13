@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.38.2 -->
+<interface>
+  <requires lib="gtk+" version="3.24"/>
+  <object class="GtkAboutDialog" id="ti_dialog">
+    <property name="can-focus">False</property>
+    <property name="type-hint">dialog</property>
+    <property name="program-name">PiMetis</property>
+    <property name="version">1.0</property>
+    <property name="comments" translatable="yes">Pimetis é um sistema de babá eletrônico automatizado com visão computacional para realizar contagem de pessoas e a identificação de objetos perigosos para crianças.</property>
+    <property name="website">https://github.com/yabamiah/PiMetis</property>
+    <property name="authors">Vinícius Mendes Martins
+João Marcos Kubchek</property>
+    <property name="logo">Pi-Métis_1.png</property>
+    <property name="license-type">mit-x11</property>
+    <child internal-child="vbox">
+      <object class="GtkBox">
+        <property name="can-focus">False</property>
+        <property name="orientation">vertical</property>
+        <property name="spacing">2</property>
+        <child internal-child="action_area">
+          <object class="GtkButtonBox">
+            <property name="can-focus">False</property>
+            <property name="layout-style">end</property>
+            <child>
+              <placeholder/>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">False</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="ti_window">
+    <property name="can-focus">False</property>
+    <property name="title" translatable="yes">PiMetis</property>
+    <property name="default-width">1080</property>
+    <property name="default-height">630</property>
+    <child>
+      <object class="GtkFixed">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <child>
+          <object class="GtkImage" id="imagem1">
+            <property name="width-request">500</property>
+            <property name="height-request">500</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="pixbuf">Pi-Métis_1.png</property>
+          </object>
+          <packing>
+            <property name="x">281</property>
+            <property name="y">-59</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox">
+            <property name="width-request">254</property>
+            <property name="height-request">193</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="hexpand">False</property>
+            <property name="vexpand">False</property>
+            <property name="orientation">vertical</property>
+            <property name="spacing">16</property>
+            <property name="homogeneous">True</property>
+            <child>
+              <object class="GtkButton" id="ti_button3">
+                <property name="label" translatable="yes">Câmeras</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="ti_button4">
+                <property name="label" translatable="yes">Registros</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="x">407</property>
+            <property name="y">367</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="ti_button1">
+            <property name="label">gtk-quit</property>
+            <property name="width-request">88</property>
+            <property name="height-request">49</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="use-stock">True</property>
+            <property name="always-show-image">True</property>
+          </object>
+          <packing>
+            <property name="x">23</property>
+            <property name="y">17</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="ti_button2">
+            <property name="label">gtk-about</property>
+            <property name="width-request">88</property>
+            <property name="height-request">49</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="use-stock">True</property>
+            <property name="always-show-image">True</property>
+          </object>
+          <packing>
+            <property name="x">969</property>
+            <property name="y">17</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

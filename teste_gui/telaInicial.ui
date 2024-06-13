@@ -2,10 +2,44 @@
 <!-- Generated with glade 3.38.2 -->
 <interface>
   <requires lib="gtk+" version="3.24"/>
-  <object class="GtkWindow" id="ti_window"> 
+  <object class="GtkAboutDialog" id="ti_dialog">
     <property name="can-focus">False</property>
+    <property name="type-hint">dialog</property>
+    <property name="program-name">PiMetis</property>
+    <property name="version">1.0</property>
+    <property name="comments" translatable="yes">Pimetis é um sistema de babá eletrônico automatizado com visão computacional para realizar contagem de pessoas e a identificação de objetos perigosos para crianças.</property>
+    <property name="website">https://github.com/yabamiah/PiMetis</property>
+    <property name="authors">Vinícius Mendes Martins
+João Marcos Kubchek</property>
+    <property name="logo">Pi-Métis_1.png</property>
+    <property name="license-type">mit-x11</property>
+    <child internal-child="vbox">
+      <object class="GtkBox">
+        <property name="can-focus">False</property>
+        <property name="orientation">vertical</property>
+        <property name="spacing">2</property>
+        <child internal-child="action_area">
+          <object class="GtkButtonBox">
+            <property name="can-focus">False</property>
+            <property name="layout-style">end</property>
+            <child>
+              <placeholder/>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">False</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="ti_window">
+    <property name="can-focus">False</property>
+    <property name="title" translatable="yes">PiMetis</property>
     <property name="default-width">1080</property>
-    <property name="default-height">780</property>
+    <property name="default-height">630</property>
     <child>
       <object class="GtkFixed">
         <property name="visible">True</property>
@@ -16,7 +50,7 @@
             <property name="height-request">500</property>
             <property name="visible">True</property>
             <property name="can-focus">False</property>
-            <property name="pixbuf">../../../Downloads/Pi-Métis-removebg-preview.png</property>
+            <property name="pixbuf">Pi-Métis_1.png</property>
           </object>
           <packing>
             <property name="x">281</property>
@@ -26,16 +60,16 @@
         <child>
           <object class="GtkBox">
             <property name="width-request">254</property>
-            <property name="height-request">230</property>
+            <property name="height-request">193</property>
             <property name="visible">True</property>
             <property name="can-focus">False</property>
             <property name="hexpand">False</property>
             <property name="vexpand">False</property>
             <property name="orientation">vertical</property>
-            <property name="spacing">24</property>
+            <property name="spacing">16</property>
             <property name="homogeneous">True</property>
             <child>
-              <object class="GtkButton">
+              <object class="GtkButton" id="ti_button3">
                 <property name="label" translatable="yes">Câmeras</property>
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
@@ -48,8 +82,8 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton">
-                <property name="label" translatable="yes">Registros</property>
+              <object class="GtkButton" id="ti_button4">
+                <property name="label" translatable="yes">Configurações</property>
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
@@ -60,27 +94,14 @@
                 <property name="position">1</property>
               </packing>
             </child>
-            <child>
-              <object class="GtkButton">
-                <property name="label" translatable="yes">Configurações</property>
-                <property name="visible">True</property>
-                <property name="can-focus">True</property>
-                <property name="receives-default">True</property>
-              </object>
-              <packing>
-                <property name="expand">False</property>
-                <property name="fill">True</property>
-                <property name="position">2</property>
-              </packing>
-            </child>
           </object>
           <packing>
             <property name="x">407</property>
-            <property name="y">393</property>
+            <property name="y">367</property>
           </packing>
         </child>
         <child>
-          <object class="GtkButton">
+          <object class="GtkButton" id="ti_button1">
             <property name="label">gtk-quit</property>
             <property name="width-request">88</property>
             <property name="height-request">49</property>
@@ -96,7 +117,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton">
+          <object class="GtkButton" id="ti_button2">
             <property name="label">gtk-about</property>
             <property name="width-request">88</property>
             <property name="height-request">49</property>
@@ -109,23 +130,6 @@
           <packing>
             <property name="x">969</property>
             <property name="y">17</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkLabel">
-            <property name="width-request">152</property>
-            <property name="height-request">80</property>
-            <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="label" translatable="yes">Licensa MIT. Versão 1.0</property>
-            <attributes>
-              <attribute name="font-desc" value="Sans 10"/>
-              <attribute name="foreground" value="#f7f7eeeedede"/>
-            </attributes>
-          </object>
-          <packing>
-            <property name="x">459</property>
-            <property name="y">628</property>
           </packing>
         </child>
       </object>

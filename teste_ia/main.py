@@ -26,6 +26,8 @@ while True:
         color = COLORS[int(classid) % len(COLORS)]
         label = "%s : %f" % (nomes[classid], score)
 
+        print(len(boxes))
+
         if nomes[classid] != "hide":
             cv.rectangle(frame, box, color, 1)
             cv.putText(frame, label, (box[0], box[1]-10),

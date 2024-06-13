@@ -250,29 +250,29 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TelegramBot.dir/build.make CMakeFiles/TelegramBot.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-telegram_bot.o: telegram_bot.cpp.o
-.PHONY : telegram_bot.o
+pi_metis_bot.o: pi_metis_bot.cpp.o
+.PHONY : pi_metis_bot.o
 
 # target to build an object file
-telegram_bot.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TelegramBot.dir/build.make CMakeFiles/TelegramBot.dir/telegram_bot.cpp.o
-.PHONY : telegram_bot.cpp.o
+pi_metis_bot.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TelegramBot.dir/build.make CMakeFiles/TelegramBot.dir/pi_metis_bot.cpp.o
+.PHONY : pi_metis_bot.cpp.o
 
-telegram_bot.i: telegram_bot.cpp.i
-.PHONY : telegram_bot.i
+pi_metis_bot.i: pi_metis_bot.cpp.i
+.PHONY : pi_metis_bot.i
 
 # target to preprocess a source file
-telegram_bot.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TelegramBot.dir/build.make CMakeFiles/TelegramBot.dir/telegram_bot.cpp.i
-.PHONY : telegram_bot.cpp.i
+pi_metis_bot.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TelegramBot.dir/build.make CMakeFiles/TelegramBot.dir/pi_metis_bot.cpp.i
+.PHONY : pi_metis_bot.cpp.i
 
-telegram_bot.s: telegram_bot.cpp.s
-.PHONY : telegram_bot.s
+pi_metis_bot.s: pi_metis_bot.cpp.s
+.PHONY : pi_metis_bot.s
 
 # target to generate assembly for a file
-telegram_bot.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TelegramBot.dir/build.make CMakeFiles/TelegramBot.dir/telegram_bot.cpp.s
-.PHONY : telegram_bot.cpp.s
+pi_metis_bot.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TelegramBot.dir/build.make CMakeFiles/TelegramBot.dir/pi_metis_bot.cpp.s
+.PHONY : pi_metis_bot.cpp.s
 
 # Help Target
 help:
@@ -294,9 +294,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... telegram_bot.o"
-	@echo "... telegram_bot.i"
-	@echo "... telegram_bot.s"
+	@echo "... pi_metis_bot.o"
+	@echo "... pi_metis_bot.i"
+	@echo "... pi_metis_bot.s"
 .PHONY : help
 
 

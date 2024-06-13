@@ -82,5 +82,6 @@
         "csignal": "cpp",
         "source_location": "cpp",
         "regex": "cpp"
-    }
+    },
+    "C_Cpp.errorSquiggles": "disabled"
 }
