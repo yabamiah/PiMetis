@@ -83,30 +83,30 @@ CMakeFiles/TelegramBot.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TelegramBot.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yaba/Sandbox/PiMetis/teste_telegram/main.cpp -o CMakeFiles/TelegramBot.dir/main.cpp.s
 
-CMakeFiles/TelegramBot.dir/telegram_bot.cpp.o: CMakeFiles/TelegramBot.dir/flags.make
-CMakeFiles/TelegramBot.dir/telegram_bot.cpp.o: ../telegram_bot.cpp
-CMakeFiles/TelegramBot.dir/telegram_bot.cpp.o: CMakeFiles/TelegramBot.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yaba/Sandbox/PiMetis/teste_telegram/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/TelegramBot.dir/telegram_bot.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TelegramBot.dir/telegram_bot.cpp.o -MF CMakeFiles/TelegramBot.dir/telegram_bot.cpp.o.d -o CMakeFiles/TelegramBot.dir/telegram_bot.cpp.o -c /home/yaba/Sandbox/PiMetis/teste_telegram/telegram_bot.cpp
+CMakeFiles/TelegramBot.dir/pi_metis_bot.cpp.o: CMakeFiles/TelegramBot.dir/flags.make
+CMakeFiles/TelegramBot.dir/pi_metis_bot.cpp.o: ../pi_metis_bot.cpp
+CMakeFiles/TelegramBot.dir/pi_metis_bot.cpp.o: CMakeFiles/TelegramBot.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yaba/Sandbox/PiMetis/teste_telegram/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/TelegramBot.dir/pi_metis_bot.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TelegramBot.dir/pi_metis_bot.cpp.o -MF CMakeFiles/TelegramBot.dir/pi_metis_bot.cpp.o.d -o CMakeFiles/TelegramBot.dir/pi_metis_bot.cpp.o -c /home/yaba/Sandbox/PiMetis/teste_telegram/pi_metis_bot.cpp
 
-CMakeFiles/TelegramBot.dir/telegram_bot.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TelegramBot.dir/telegram_bot.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yaba/Sandbox/PiMetis/teste_telegram/telegram_bot.cpp > CMakeFiles/TelegramBot.dir/telegram_bot.cpp.i
+CMakeFiles/TelegramBot.dir/pi_metis_bot.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TelegramBot.dir/pi_metis_bot.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yaba/Sandbox/PiMetis/teste_telegram/pi_metis_bot.cpp > CMakeFiles/TelegramBot.dir/pi_metis_bot.cpp.i
 
-CMakeFiles/TelegramBot.dir/telegram_bot.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TelegramBot.dir/telegram_bot.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yaba/Sandbox/PiMetis/teste_telegram/telegram_bot.cpp -o CMakeFiles/TelegramBot.dir/telegram_bot.cpp.s
+CMakeFiles/TelegramBot.dir/pi_metis_bot.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TelegramBot.dir/pi_metis_bot.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yaba/Sandbox/PiMetis/teste_telegram/pi_metis_bot.cpp -o CMakeFiles/TelegramBot.dir/pi_metis_bot.cpp.s
 
 # Object files for target TelegramBot
 TelegramBot_OBJECTS = \
 "CMakeFiles/TelegramBot.dir/main.cpp.o" \
-"CMakeFiles/TelegramBot.dir/telegram_bot.cpp.o"
+"CMakeFiles/TelegramBot.dir/pi_metis_bot.cpp.o"
 
 # External object files for target TelegramBot
 TelegramBot_EXTERNAL_OBJECTS =
 
 TelegramBot: CMakeFiles/TelegramBot.dir/main.cpp.o
-TelegramBot: CMakeFiles/TelegramBot.dir/telegram_bot.cpp.o
+TelegramBot: CMakeFiles/TelegramBot.dir/pi_metis_bot.cpp.o
 TelegramBot: CMakeFiles/TelegramBot.dir/build.make
 TelegramBot: _deps/cpr-build/cpr/libcpr.so.1.9.0
 TelegramBot: _deps/curl-build/lib/libcurl.so

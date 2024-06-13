@@ -1,7 +1,7 @@
 CMakeFiles/TelegramBot.dir/main.cpp.o: \
  /home/yaba/Sandbox/PiMetis/teste_telegram/main.cpp \
  /usr/include/stdc-predef.h \
- /home/yaba/Sandbox/PiMetis/teste_telegram/telegram_bot.hpp \
+ /home/yaba/Sandbox/PiMetis/teste_telegram/pi_metis_bot.hpp \
  /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

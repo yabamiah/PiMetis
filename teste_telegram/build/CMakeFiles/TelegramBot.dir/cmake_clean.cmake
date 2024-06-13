@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/TelegramBot.dir/main.cpp.o"
   "CMakeFiles/TelegramBot.dir/main.cpp.o.d"
-  "CMakeFiles/TelegramBot.dir/telegram_bot.cpp.o"
-  "CMakeFiles/TelegramBot.dir/telegram_bot.cpp.o.d"
+  "CMakeFiles/TelegramBot.dir/pi_metis_bot.cpp.o"
+  "CMakeFiles/TelegramBot.dir/pi_metis_bot.cpp.o.d"
   "TelegramBot"
   "TelegramBot.pdb"
 )

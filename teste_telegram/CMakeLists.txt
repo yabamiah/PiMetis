@@ -10,12 +10,6 @@ FetchContent_MakeAvailable(cpr)
 
 find_package(nlohmann_json 3.2.0 REQUIRED)
 
-# add_subdirectory(cpr)
-# add_subdirectory(json)
-
-# include_directories(cpr/include)
-# include_directories(json/include)
-
-add_executable(TelegramBot main.cpp telegram_bot.cpp)
+add_executable(TelegramBot main.cpp pi_metis_bot.cpp)
 
 target_link_libraries(TelegramBot PRIVATE cpr::cpr nlohmann_json::nlohmann_json)

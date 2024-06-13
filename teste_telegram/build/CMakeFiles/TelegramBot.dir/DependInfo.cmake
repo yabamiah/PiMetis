@@ -9,7 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/yaba/Sandbox/PiMetis/teste_telegram/main.cpp" "CMakeFiles/TelegramBot.dir/main.cpp.o" "gcc" "CMakeFiles/TelegramBot.dir/main.cpp.o.d"
-  "/home/yaba/Sandbox/PiMetis/teste_telegram/telegram_bot.cpp" "CMakeFiles/TelegramBot.dir/telegram_bot.cpp.o" "gcc" "CMakeFiles/TelegramBot.dir/telegram_bot.cpp.o.d"
+  "/home/yaba/Sandbox/PiMetis/teste_telegram/pi_metis_bot.cpp" "CMakeFiles/TelegramBot.dir/pi_metis_bot.cpp.o" "gcc" "CMakeFiles/TelegramBot.dir/pi_metis_bot.cpp.o.d"
   )
 
 # Targets to which this target links.

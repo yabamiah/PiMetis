@@ -2,45 +2,16 @@
 #include "opencv2/opencv.hpp"
 #include <iostream>
 
-#include "teste.hpp"
-
-std::mutex imagemMutex;
-Glib::Dispatcher dispatcher;
-volatile bool captureVideoFromCamera = false;
-cv::VideoCapture camera;
-cv::Mat frameGBR, frame;
+#include "tela_camera.hpp"
+#include "tela_inicial.hpp"
 
 int main(int argc, char *argv[])
 {
     Gtk::Main app(argc, argv);
 
-    auto ti = TelaTeste::create();
+    auto ti = TelaInicial::create();
 
-    if (ti != NULL)
-    {
-        dispatcher.connect([&]() {
-            imagemMutex.lock();
-            ti->atualizarImagem(frame);
-            imagemMutex.unlock();
-        });
-
-        bool cameraInicializada = inicializarCamera(0);
-
-        if (cameraInicializada)
-        {
-            captureVideoFromCamera = true;
-            std::thread cameraThread = std::thread(&cameraloop);
-            Gtk::Main::run(*ti);
-
-            captureVideoFromCamera = false;
-            cameraThread.join();
-        }
-    }
-
-    if (camera.isOpened())
-    {
-        camera.release();
-    }
+    Gtk::Main::run(*ti);
 
     return 0;
 }

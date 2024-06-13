@@ -180,8 +180,8 @@ _deps/zlib-build/clean: _deps/zlib-build/CMakeFiles/zlib.dir/clean
 # Target rules for target CMakeFiles/TelegramBot.dir
 
 # All Build rule for target.
-CMakeFiles/TelegramBot.dir/all: _deps/cpr-build/cpr/CMakeFiles/cpr.dir/all
 CMakeFiles/TelegramBot.dir/all: _deps/curl-build/lib/CMakeFiles/libcurl.dir/all
+CMakeFiles/TelegramBot.dir/all: _deps/cpr-build/cpr/CMakeFiles/cpr.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TelegramBot.dir/build.make CMakeFiles/TelegramBot.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TelegramBot.dir/build.make CMakeFiles/TelegramBot.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yaba/Sandbox/PiMetis/teste_telegram/build/CMakeFiles --progress-num=1 "Built target TelegramBot"
