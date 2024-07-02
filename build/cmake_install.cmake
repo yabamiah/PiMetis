@@ -45,6 +45,10 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/yaba/Sandbox/PiMetis/build/_deps/cpr-build/cmake_install.cmake")
+  include("/home/yaba/Sandbox/PiMetis/build/pi_metis_bot/cmake_install.cmake")
+  include("/home/yaba/Sandbox/PiMetis/build/pi_metis_gui/cmake_install.cmake")
+  include("/home/yaba/Sandbox/PiMetis/build/pi_metis_ia/cmake_install.cmake")
+  include("/home/yaba/Sandbox/PiMetis/build/pi_metis_stream/cmake_install.cmake")
 
 endif()
 

@@ -9,8 +9,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/yaba/Sandbox/PiMetis/bot_and_eyes.cpp" "CMakeFiles/BotAndEyes.dir/bot_and_eyes.cpp.o" "gcc" "CMakeFiles/BotAndEyes.dir/bot_and_eyes.cpp.o.d"
-  "/home/yaba/Sandbox/PiMetis/teste_ia/pi_metis_eyes.cpp" "CMakeFiles/BotAndEyes.dir/teste_ia/pi_metis_eyes.cpp.o" "gcc" "CMakeFiles/BotAndEyes.dir/teste_ia/pi_metis_eyes.cpp.o.d"
-  "/home/yaba/Sandbox/PiMetis/teste_telegram/pi_metis_bot.cpp" "CMakeFiles/BotAndEyes.dir/teste_telegram/pi_metis_bot.cpp.o" "gcc" "CMakeFiles/BotAndEyes.dir/teste_telegram/pi_metis_bot.cpp.o.d"
+  "/home/yaba/Sandbox/PiMetis/pi_metis_bot/pi_metis_bot.cpp" "CMakeFiles/BotAndEyes.dir/pi_metis_bot/pi_metis_bot.cpp.o" "gcc" "CMakeFiles/BotAndEyes.dir/pi_metis_bot/pi_metis_bot.cpp.o.d"
+  "/home/yaba/Sandbox/PiMetis/pi_metis_gui/tela_camera.cpp" "CMakeFiles/BotAndEyes.dir/pi_metis_gui/tela_camera.cpp.o" "gcc" "CMakeFiles/BotAndEyes.dir/pi_metis_gui/tela_camera.cpp.o.d"
+  "/home/yaba/Sandbox/PiMetis/pi_metis_gui/tela_inicial.cpp" "CMakeFiles/BotAndEyes.dir/pi_metis_gui/tela_inicial.cpp.o" "gcc" "CMakeFiles/BotAndEyes.dir/pi_metis_gui/tela_inicial.cpp.o.d"
+  "/home/yaba/Sandbox/PiMetis/pi_metis_ia/frame_provider.cpp" "CMakeFiles/BotAndEyes.dir/pi_metis_ia/frame_provider.cpp.o" "gcc" "CMakeFiles/BotAndEyes.dir/pi_metis_ia/frame_provider.cpp.o.d"
+  "/home/yaba/Sandbox/PiMetis/pi_metis_ia/pi_metis_eyes.cpp" "CMakeFiles/BotAndEyes.dir/pi_metis_ia/pi_metis_eyes.cpp.o" "gcc" "CMakeFiles/BotAndEyes.dir/pi_metis_ia/pi_metis_eyes.cpp.o.d"
+  "/home/yaba/Sandbox/PiMetis/pi_metis_stream/pi_metis_stream.cpp" "CMakeFiles/BotAndEyes.dir/pi_metis_stream/pi_metis_stream.cpp.o" "gcc" "CMakeFiles/BotAndEyes.dir/pi_metis_stream/pi_metis_stream.cpp.o.d"
   )
 
 # Targets to which this target links.

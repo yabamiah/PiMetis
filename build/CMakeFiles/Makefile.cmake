@@ -41,6 +41,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "_deps/zlib-src/cmake/detect-install-dirs.cmake"
   "_deps/zlib-src/cmake/detect-sanitizer.cmake"
   "_deps/zlib-src/zlib.pc.cmakein"
+  "../pi_metis_bot/CMakeLists.txt"
+  "../pi_metis_gui/CMakeLists.txt"
+  "../pi_metis_ia/CMakeLists.txt"
+  "../pi_metis_stream/CMakeLists.txt"
   "/usr/lib/x86_64-linux-gnu/cmake/opencv4/OpenCVConfig-version.cmake"
   "/usr/lib/x86_64-linux-gnu/cmake/opencv4/OpenCVConfig.cmake"
   "/usr/lib/x86_64-linux-gnu/cmake/opencv4/OpenCVModules-release.cmake"
@@ -132,13 +136,21 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "_deps/curl-build/lib/CMakeFiles/CMakeDirectoryInformation.cmake"
   "_deps/cpr-build/cpr/CMakeFiles/CMakeDirectoryInformation.cmake"
   "_deps/cpr-build/include/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "pi_metis_bot/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "pi_metis_gui/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "pi_metis_ia/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "pi_metis_stream/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/BotAndEyes.dir/DependInfo.cmake"
+  "CMakeFiles/main.dir/DependInfo.cmake"
   "_deps/zlib-build/CMakeFiles/zlib.dir/DependInfo.cmake"
   "_deps/curl-build/CMakeFiles/uninstall.dir/DependInfo.cmake"
   "_deps/curl-build/lib/CMakeFiles/libcurl.dir/DependInfo.cmake"
   "_deps/cpr-build/cpr/CMakeFiles/cpr.dir/DependInfo.cmake"
+  "pi_metis_bot/CMakeFiles/pi_metis_bot.dir/DependInfo.cmake"
+  "pi_metis_gui/CMakeFiles/pi_metis_gui.dir/DependInfo.cmake"
+  "pi_metis_ia/CMakeFiles/pi_metis_ia.dir/DependInfo.cmake"
+  "pi_metis_stream/CMakeFiles/pi_metis_stream.dir/DependInfo.cmake"
   )

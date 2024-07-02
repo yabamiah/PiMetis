@@ -162,17 +162,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named BotAndEyes
+# Target rules for targets named main
 
 # Build rule for target.
-BotAndEyes: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BotAndEyes
-.PHONY : BotAndEyes
+main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
+.PHONY : main
 
 # fast build rule for target.
-BotAndEyes/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BotAndEyes.dir/build.make CMakeFiles/BotAndEyes.dir/build
-.PHONY : BotAndEyes/fast
+main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+.PHONY : main/fast
 
 #=============================================================================
 # Target rules for targets named zlib
@@ -226,77 +226,81 @@ cpr/fast:
 	$(MAKE) $(MAKESILENT) -f _deps/cpr-build/cpr/CMakeFiles/cpr.dir/build.make _deps/cpr-build/cpr/CMakeFiles/cpr.dir/build
 .PHONY : cpr/fast
 
-bot_and_eyes.o: bot_and_eyes.cpp.o
-.PHONY : bot_and_eyes.o
+#=============================================================================
+# Target rules for targets named pi_metis_bot
+
+# Build rule for target.
+pi_metis_bot: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pi_metis_bot
+.PHONY : pi_metis_bot
+
+# fast build rule for target.
+pi_metis_bot/fast:
+	$(MAKE) $(MAKESILENT) -f pi_metis_bot/CMakeFiles/pi_metis_bot.dir/build.make pi_metis_bot/CMakeFiles/pi_metis_bot.dir/build
+.PHONY : pi_metis_bot/fast
+
+#=============================================================================
+# Target rules for targets named pi_metis_gui
+
+# Build rule for target.
+pi_metis_gui: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pi_metis_gui
+.PHONY : pi_metis_gui
+
+# fast build rule for target.
+pi_metis_gui/fast:
+	$(MAKE) $(MAKESILENT) -f pi_metis_gui/CMakeFiles/pi_metis_gui.dir/build.make pi_metis_gui/CMakeFiles/pi_metis_gui.dir/build
+.PHONY : pi_metis_gui/fast
+
+#=============================================================================
+# Target rules for targets named pi_metis_ia
+
+# Build rule for target.
+pi_metis_ia: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pi_metis_ia
+.PHONY : pi_metis_ia
+
+# fast build rule for target.
+pi_metis_ia/fast:
+	$(MAKE) $(MAKESILENT) -f pi_metis_ia/CMakeFiles/pi_metis_ia.dir/build.make pi_metis_ia/CMakeFiles/pi_metis_ia.dir/build
+.PHONY : pi_metis_ia/fast
+
+#=============================================================================
+# Target rules for targets named pi_metis_stream
+
+# Build rule for target.
+pi_metis_stream: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pi_metis_stream
+.PHONY : pi_metis_stream
+
+# fast build rule for target.
+pi_metis_stream/fast:
+	$(MAKE) $(MAKESILENT) -f pi_metis_stream/CMakeFiles/pi_metis_stream.dir/build.make pi_metis_stream/CMakeFiles/pi_metis_stream.dir/build
+.PHONY : pi_metis_stream/fast
+
+main.o: main.cpp.o
+.PHONY : main.o
 
 # target to build an object file
-bot_and_eyes.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BotAndEyes.dir/build.make CMakeFiles/BotAndEyes.dir/bot_and_eyes.cpp.o
-.PHONY : bot_and_eyes.cpp.o
+main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.o
+.PHONY : main.cpp.o
 
-bot_and_eyes.i: bot_and_eyes.cpp.i
-.PHONY : bot_and_eyes.i
-
-# target to preprocess a source file
-bot_and_eyes.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BotAndEyes.dir/build.make CMakeFiles/BotAndEyes.dir/bot_and_eyes.cpp.i
-.PHONY : bot_and_eyes.cpp.i
-
-bot_and_eyes.s: bot_and_eyes.cpp.s
-.PHONY : bot_and_eyes.s
-
-# target to generate assembly for a file
-bot_and_eyes.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BotAndEyes.dir/build.make CMakeFiles/BotAndEyes.dir/bot_and_eyes.cpp.s
-.PHONY : bot_and_eyes.cpp.s
-
-teste_ia/pi_metis_eyes.o: teste_ia/pi_metis_eyes.cpp.o
-.PHONY : teste_ia/pi_metis_eyes.o
-
-# target to build an object file
-teste_ia/pi_metis_eyes.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BotAndEyes.dir/build.make CMakeFiles/BotAndEyes.dir/teste_ia/pi_metis_eyes.cpp.o
-.PHONY : teste_ia/pi_metis_eyes.cpp.o
-
-teste_ia/pi_metis_eyes.i: teste_ia/pi_metis_eyes.cpp.i
-.PHONY : teste_ia/pi_metis_eyes.i
+main.i: main.cpp.i
+.PHONY : main.i
 
 # target to preprocess a source file
-teste_ia/pi_metis_eyes.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BotAndEyes.dir/build.make CMakeFiles/BotAndEyes.dir/teste_ia/pi_metis_eyes.cpp.i
-.PHONY : teste_ia/pi_metis_eyes.cpp.i
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.i
+.PHONY : main.cpp.i
 
-teste_ia/pi_metis_eyes.s: teste_ia/pi_metis_eyes.cpp.s
-.PHONY : teste_ia/pi_metis_eyes.s
-
-# target to generate assembly for a file
-teste_ia/pi_metis_eyes.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BotAndEyes.dir/build.make CMakeFiles/BotAndEyes.dir/teste_ia/pi_metis_eyes.cpp.s
-.PHONY : teste_ia/pi_metis_eyes.cpp.s
-
-teste_telegram/pi_metis_bot.o: teste_telegram/pi_metis_bot.cpp.o
-.PHONY : teste_telegram/pi_metis_bot.o
-
-# target to build an object file
-teste_telegram/pi_metis_bot.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BotAndEyes.dir/build.make CMakeFiles/BotAndEyes.dir/teste_telegram/pi_metis_bot.cpp.o
-.PHONY : teste_telegram/pi_metis_bot.cpp.o
-
-teste_telegram/pi_metis_bot.i: teste_telegram/pi_metis_bot.cpp.i
-.PHONY : teste_telegram/pi_metis_bot.i
-
-# target to preprocess a source file
-teste_telegram/pi_metis_bot.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BotAndEyes.dir/build.make CMakeFiles/BotAndEyes.dir/teste_telegram/pi_metis_bot.cpp.i
-.PHONY : teste_telegram/pi_metis_bot.cpp.i
-
-teste_telegram/pi_metis_bot.s: teste_telegram/pi_metis_bot.cpp.s
-.PHONY : teste_telegram/pi_metis_bot.s
+main.s: main.cpp.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-teste_telegram/pi_metis_bot.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BotAndEyes.dir/build.make CMakeFiles/BotAndEyes.dir/teste_telegram/pi_metis_bot.cpp.s
-.PHONY : teste_telegram/pi_metis_bot.cpp.s
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -311,19 +315,17 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... uninstall"
-	@echo "... BotAndEyes"
 	@echo "... cpr"
 	@echo "... libcurl"
+	@echo "... main"
+	@echo "... pi_metis_bot"
+	@echo "... pi_metis_gui"
+	@echo "... pi_metis_ia"
+	@echo "... pi_metis_stream"
 	@echo "... zlib"
-	@echo "... bot_and_eyes.o"
-	@echo "... bot_and_eyes.i"
-	@echo "... bot_and_eyes.s"
-	@echo "... teste_ia/pi_metis_eyes.o"
-	@echo "... teste_ia/pi_metis_eyes.i"
-	@echo "... teste_ia/pi_metis_eyes.s"
-	@echo "... teste_telegram/pi_metis_bot.o"
-	@echo "... teste_telegram/pi_metis_bot.i"
-	@echo "... teste_telegram/pi_metis_bot.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 

@@ -202,7 +202,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=TelegramBot
+CMAKE_PROJECT_NAME:STATIC=main
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION:STATIC=1.9.0
@@ -649,17 +649,26 @@ PKG_CONFIG_ARGN:STRING=
 //pkg-config executable
 PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
 
+//Value Computed by CMake
+PiMetisEyes_BINARY_DIR:STATIC=/home/yaba/Sandbox/PiMetis/build/pi_metis_ia
+
+//Value Computed by CMake
+PiMetisEyes_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+PiMetisEyes_SOURCE_DIR:STATIC=/home/yaba/Sandbox/PiMetis/pi_metis_ia
+
 //Path to a file.
 RANDOM_FILE:FILEPATH=/dev/urandom
 
 //Value Computed by CMake
-TelegramBot_BINARY_DIR:STATIC=/home/yaba/Sandbox/PiMetis/build
+TelegramBot_BINARY_DIR:STATIC=/home/yaba/Sandbox/PiMetis/build/pi_metis_bot
 
 //Value Computed by CMake
-TelegramBot_IS_TOP_LEVEL:STATIC=ON
+TelegramBot_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-TelegramBot_SOURCE_DIR:STATIC=/home/yaba/Sandbox/PiMetis
+TelegramBot_SOURCE_DIR:STATIC=/home/yaba/Sandbox/PiMetis/pi_metis_bot
 
 //Use libidn2 for IDN support
 USE_LIBIDN2:BOOL=ON
@@ -672,6 +681,15 @@ USE_NGTCP2:BOOL=OFF
 
 //Use quiche library for HTTP/3 support
 USE_QUICHE:BOOL=OFF
+
+//Value Computed by CMake
+VideoStreamer_BINARY_DIR:STATIC=/home/yaba/Sandbox/PiMetis/build/pi_metis_stream
+
+//Value Computed by CMake
+VideoStreamer_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+VideoStreamer_SOURCE_DIR:STATIC=/home/yaba/Sandbox/PiMetis/pi_metis_stream
 
 //Build with AVX2
 WITH_AVX2:BOOL=ON
@@ -743,8 +761,89 @@ cpr_IS_TOP_LEVEL:STATIC=OFF
 //Value Computed by CMake
 cpr_SOURCE_DIR:STATIC=/home/yaba/Sandbox/PiMetis/build/_deps/cpr-src
 
+//Value Computed by CMake
+main_BINARY_DIR:STATIC=/home/yaba/Sandbox/PiMetis/build
+
+//Value Computed by CMake
+main_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+main_SOURCE_DIR:STATIC=/home/yaba/Sandbox/PiMetis
+
 //The directory containing a CMake configuration file for nlohmann_json.
 nlohmann_json_DIR:PATH=/usr/local/share/cmake/nlohmann_json
+
+//Dependencies for the target
+pi_metis_bot_LIB_DEPENDS:STATIC=general;cpr::cpr;
+
+//Dependencies for the target
+pi_metis_gui_LIB_DEPENDS:STATIC=general;opencv_calib3d;general;opencv_core;general;opencv_dnn;general;opencv_features2d;general;opencv_flann;general;opencv_highgui;general;opencv_imgcodecs;general;opencv_imgproc;general;opencv_ml;general;opencv_objdetect;general;opencv_photo;general;opencv_stitching;general;opencv_video;general;opencv_videoio;general;opencv_alphamat;general;opencv_aruco;general;opencv_barcode;general;opencv_bgsegm;general;opencv_bioinspired;general;opencv_ccalib;general;opencv_datasets;general;opencv_dnn_objdetect;general;opencv_dnn_superres;general;opencv_dpm;general;opencv_face;general;opencv_freetype;general;opencv_fuzzy;general;opencv_hdf;general;opencv_hfs;general;opencv_img_hash;general;opencv_intensity_transform;general;opencv_line_descriptor;general;opencv_mcc;general;opencv_optflow;general;opencv_phase_unwrapping;general;opencv_plot;general;opencv_quality;general;opencv_rapid;general;opencv_reg;general;opencv_rgbd;general;opencv_saliency;general;opencv_shape;general;opencv_stereo;general;opencv_structured_light;general;opencv_superres;general;opencv_surface_matching;general;opencv_text;general;opencv_tracking;general;opencv_videostab;general;opencv_viz;general;opencv_wechat_qrcode;general;opencv_ximgproc;general;opencv_xobjdetect;general;opencv_xphoto;general;gtkmm-3.0;general;atkmm-1.6;general;gdkmm-3.0;general;giomm-2.4;general;gtk-3;general;gdk-3;general;atk-1.0;general;cairo-gobject;general;gio-2.0;general;pangomm-1.4;general;glibmm-2.4;general;cairomm-1.0;general;sigc-2.0;general;pangocairo-1.0;general;pango-1.0;general;harfbuzz;general;cairo;general;gdk_pixbuf-2.0;general;gobject-2.0;general;glib-2.0;general;glib-2.0;
+
+//Dependencies for the target
+pi_metis_ia_LIB_DEPENDS:STATIC=general;opencv_calib3d;general;opencv_core;general;opencv_dnn;general;opencv_features2d;general;opencv_flann;general;opencv_highgui;general;opencv_imgcodecs;general;opencv_imgproc;general;opencv_ml;general;opencv_objdetect;general;opencv_photo;general;opencv_stitching;general;opencv_video;general;opencv_videoio;general;opencv_alphamat;general;opencv_aruco;general;opencv_barcode;general;opencv_bgsegm;general;opencv_bioinspired;general;opencv_ccalib;general;opencv_datasets;general;opencv_dnn_objdetect;general;opencv_dnn_superres;general;opencv_dpm;general;opencv_face;general;opencv_freetype;general;opencv_fuzzy;general;opencv_hdf;general;opencv_hfs;general;opencv_img_hash;general;opencv_intensity_transform;general;opencv_line_descriptor;general;opencv_mcc;general;opencv_optflow;general;opencv_phase_unwrapping;general;opencv_plot;general;opencv_quality;general;opencv_rapid;general;opencv_reg;general;opencv_rgbd;general;opencv_saliency;general;opencv_shape;general;opencv_stereo;general;opencv_structured_light;general;opencv_superres;general;opencv_surface_matching;general;opencv_text;general;opencv_tracking;general;opencv_videostab;general;opencv_viz;general;opencv_wechat_qrcode;general;opencv_ximgproc;general;opencv_xobjdetect;general;opencv_xphoto;
+
+//Path to a library.
+pkgcfg_lib_GLIB_glib-2.0:FILEPATH=/usr/lib/x86_64-linux-gnu/libglib-2.0.so
+
+//Path to a library.
+pkgcfg_lib_GTKMM_atk-1.0:FILEPATH=/usr/lib/x86_64-linux-gnu/libatk-1.0.so
+
+//Path to a library.
+pkgcfg_lib_GTKMM_atkmm-1.6:FILEPATH=/usr/lib/x86_64-linux-gnu/libatkmm-1.6.so
+
+//Path to a library.
+pkgcfg_lib_GTKMM_cairo:FILEPATH=/usr/lib/x86_64-linux-gnu/libcairo.so
+
+//Path to a library.
+pkgcfg_lib_GTKMM_cairo-gobject:FILEPATH=/usr/lib/x86_64-linux-gnu/libcairo-gobject.so
+
+//Path to a library.
+pkgcfg_lib_GTKMM_cairomm-1.0:FILEPATH=/usr/lib/x86_64-linux-gnu/libcairomm-1.0.so
+
+//Path to a library.
+pkgcfg_lib_GTKMM_gdk-3:FILEPATH=/usr/lib/x86_64-linux-gnu/libgdk-3.so
+
+//Path to a library.
+pkgcfg_lib_GTKMM_gdk_pixbuf-2.0:FILEPATH=/usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so
+
+//Path to a library.
+pkgcfg_lib_GTKMM_gdkmm-3.0:FILEPATH=/usr/lib/x86_64-linux-gnu/libgdkmm-3.0.so
+
+//Path to a library.
+pkgcfg_lib_GTKMM_gio-2.0:FILEPATH=/usr/lib/x86_64-linux-gnu/libgio-2.0.so
+
+//Path to a library.
+pkgcfg_lib_GTKMM_giomm-2.4:FILEPATH=/usr/lib/x86_64-linux-gnu/libgiomm-2.4.so
+
+//Path to a library.
+pkgcfg_lib_GTKMM_glib-2.0:FILEPATH=/usr/lib/x86_64-linux-gnu/libglib-2.0.so
+
+//Path to a library.
+pkgcfg_lib_GTKMM_glibmm-2.4:FILEPATH=/usr/lib/x86_64-linux-gnu/libglibmm-2.4.so
+
+//Path to a library.
+pkgcfg_lib_GTKMM_gobject-2.0:FILEPATH=/usr/lib/x86_64-linux-gnu/libgobject-2.0.so
+
+//Path to a library.
+pkgcfg_lib_GTKMM_gtk-3:FILEPATH=/usr/lib/x86_64-linux-gnu/libgtk-3.so
+
+//Path to a library.
+pkgcfg_lib_GTKMM_gtkmm-3.0:FILEPATH=/usr/lib/x86_64-linux-gnu/libgtkmm-3.0.so
+
+//Path to a library.
+pkgcfg_lib_GTKMM_harfbuzz:FILEPATH=/usr/lib/x86_64-linux-gnu/libharfbuzz.so
+
+//Path to a library.
+pkgcfg_lib_GTKMM_pango-1.0:FILEPATH=/usr/lib/x86_64-linux-gnu/libpango-1.0.so
+
+//Path to a library.
+pkgcfg_lib_GTKMM_pangocairo-1.0:FILEPATH=/usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so
+
+//Path to a library.
+pkgcfg_lib_GTKMM_pangomm-1.4:FILEPATH=/usr/lib/x86_64-linux-gnu/libpangomm-1.4.so
+
+//Path to a library.
+pkgcfg_lib_GTKMM_sigc-2.0:FILEPATH=/usr/lib/x86_64-linux-gnu/libsigc-2.0.so
 
 //Path to a library.
 pkgcfg_lib__OPENSSL_crypto:FILEPATH=/usr/lib/x86_64-linux-gnu/libcrypto.so
@@ -916,7 +1015,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=7
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=11
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -1045,6 +1144,8 @@ FIND_PACKAGE_MESSAGE_DETAILS_OpenCV:INTERNAL=[/usr][v4.5.4()]
 FIND_PACKAGE_MESSAGE_DETAILS_OpenSSL:INTERNAL=[/usr/lib/x86_64-linux-gnu/libcrypto.so][/usr/include][c ][v3.0.2()]
 //Details about finding Perl
 FIND_PACKAGE_MESSAGE_DETAILS_Perl:INTERNAL=[/usr/bin/perl][v5.34.0()]
+//Details about finding PkgConfig
+FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/bin/pkg-config][v0.29.2()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //Details about finding ZLIB
@@ -1055,6 +1156,76 @@ FIND_PACKAGE_MESSAGE_DETAILS_nlohmann_json:INTERNAL=[/usr/local/share/cmake/nloh
 FNO_LTO_AVAILABLE:INTERNAL=1
 //ADVANCED property for variable: GIT_EXECUTABLE
 GIT_EXECUTABLE-ADVANCED:INTERNAL=1
+GLIB_CFLAGS:INTERNAL=-I/usr/include/glib-2.0;-I/usr/lib/x86_64-linux-gnu/glib-2.0/include
+GLIB_CFLAGS_I:INTERNAL=
+GLIB_CFLAGS_OTHER:INTERNAL=
+GLIB_FOUND:INTERNAL=1
+GLIB_INCLUDEDIR:INTERNAL=/usr/include
+GLIB_INCLUDE_DIRS:INTERNAL=/usr/include/glib-2.0;/usr/lib/x86_64-linux-gnu/glib-2.0/include
+GLIB_LDFLAGS:INTERNAL=-L/usr/lib/x86_64-linux-gnu;-lglib-2.0
+GLIB_LDFLAGS_OTHER:INTERNAL=
+GLIB_LIBDIR:INTERNAL=/usr/lib/x86_64-linux-gnu
+GLIB_LIBRARIES:INTERNAL=glib-2.0
+GLIB_LIBRARY_DIRS:INTERNAL=/usr/lib/x86_64-linux-gnu
+GLIB_LIBS:INTERNAL=
+GLIB_LIBS_L:INTERNAL=
+GLIB_LIBS_OTHER:INTERNAL=
+GLIB_LIBS_PATHS:INTERNAL=
+GLIB_MODULE_NAME:INTERNAL=glib-2.0
+GLIB_PREFIX:INTERNAL=/usr
+GLIB_STATIC_CFLAGS:INTERNAL=-I/usr/include/glib-2.0;-I/usr/lib/x86_64-linux-gnu/glib-2.0/include
+GLIB_STATIC_CFLAGS_I:INTERNAL=
+GLIB_STATIC_CFLAGS_OTHER:INTERNAL=
+GLIB_STATIC_INCLUDE_DIRS:INTERNAL=/usr/include/glib-2.0;/usr/lib/x86_64-linux-gnu/glib-2.0/include
+GLIB_STATIC_LDFLAGS:INTERNAL=-L/usr/lib/x86_64-linux-gnu;-lglib-2.0;-pthread;-lm;-lpcre
+GLIB_STATIC_LDFLAGS_OTHER:INTERNAL=-pthread
+GLIB_STATIC_LIBDIR:INTERNAL=
+GLIB_STATIC_LIBRARIES:INTERNAL=glib-2.0;m;pcre
+GLIB_STATIC_LIBRARY_DIRS:INTERNAL=/usr/lib/x86_64-linux-gnu
+GLIB_STATIC_LIBS:INTERNAL=
+GLIB_STATIC_LIBS_L:INTERNAL=
+GLIB_STATIC_LIBS_OTHER:INTERNAL=
+GLIB_STATIC_LIBS_PATHS:INTERNAL=
+GLIB_VERSION:INTERNAL=2.72.4
+GLIB_glib-2.0_INCLUDEDIR:INTERNAL=
+GLIB_glib-2.0_LIBDIR:INTERNAL=
+GLIB_glib-2.0_PREFIX:INTERNAL=
+GLIB_glib-2.0_VERSION:INTERNAL=
+GTKMM_CFLAGS:INTERNAL=-pthread;-I/usr/local/include;-I/usr/include/gtkmm-3.0;-I/usr/lib/x86_64-linux-gnu/gtkmm-3.0/include;-I/usr/include/atkmm-1.6;-I/usr/lib/x86_64-linux-gnu/atkmm-1.6/include;-I/usr/include/gtk-3.0/unix-print;-I/usr/include/gdkmm-3.0;-I/usr/lib/x86_64-linux-gnu/gdkmm-3.0/include;-I/usr/include/giomm-2.4;-I/usr/lib/x86_64-linux-gnu/giomm-2.4/include;-I/usr/include/gtk-3.0;-I/usr/include/at-spi2-atk/2.0;-I/usr/include/at-spi-2.0;-I/usr/include/dbus-1.0;-I/usr/lib/x86_64-linux-gnu/dbus-1.0/include;-I/usr/include/gtk-3.0;-I/usr/include/gio-unix-2.0;-I/usr/include/cairo;-I/usr/include/atk-1.0;-I/usr/include/cairo;-I/usr/include/pangomm-1.4;-I/usr/lib/x86_64-linux-gnu/pangomm-1.4/include;-I/usr/include/glibmm-2.4;-I/usr/lib/x86_64-linux-gnu/glibmm-2.4/include;-I/usr/include/cairomm-1.0;-I/usr/lib/x86_64-linux-gnu/cairomm-1.0/include;-I/usr/include/sigc++-2.0;-I/usr/lib/x86_64-linux-gnu/sigc++-2.0/include;-I/usr/include/pango-1.0;-I/usr/include/harfbuzz;-I/usr/include/pango-1.0;-I/usr/include/fribidi;-I/usr/include/harfbuzz;-I/usr/include/cairo;-I/usr/include/pixman-1;-I/usr/include/uuid;-I/usr/include/freetype2;-I/usr/include/gdk-pixbuf-2.0;-I/usr/include/libpng16;-I/usr/include/x86_64-linux-gnu;-I/usr/include/libmount;-I/usr/include/blkid;-I/usr/include/glib-2.0;-I/usr/lib/x86_64-linux-gnu/glib-2.0/include
+GTKMM_CFLAGS_I:INTERNAL=
+GTKMM_CFLAGS_OTHER:INTERNAL=-pthread
+GTKMM_FOUND:INTERNAL=1
+GTKMM_INCLUDEDIR:INTERNAL=/usr/include
+GTKMM_INCLUDE_DIRS:INTERNAL=/usr/local/include;/usr/include/gtkmm-3.0;/usr/lib/x86_64-linux-gnu/gtkmm-3.0/include;/usr/include/atkmm-1.6;/usr/lib/x86_64-linux-gnu/atkmm-1.6/include;/usr/include/gtk-3.0/unix-print;/usr/include/gdkmm-3.0;/usr/lib/x86_64-linux-gnu/gdkmm-3.0/include;/usr/include/giomm-2.4;/usr/lib/x86_64-linux-gnu/giomm-2.4/include;/usr/include/gtk-3.0;/usr/include/at-spi2-atk/2.0;/usr/include/at-spi-2.0;/usr/include/dbus-1.0;/usr/lib/x86_64-linux-gnu/dbus-1.0/include;/usr/include/gtk-3.0;/usr/include/gio-unix-2.0;/usr/include/cairo;/usr/include/atk-1.0;/usr/include/cairo;/usr/include/pangomm-1.4;/usr/lib/x86_64-linux-gnu/pangomm-1.4/include;/usr/include/glibmm-2.4;/usr/lib/x86_64-linux-gnu/glibmm-2.4/include;/usr/include/cairomm-1.0;/usr/lib/x86_64-linux-gnu/cairomm-1.0/include;/usr/include/sigc++-2.0;/usr/lib/x86_64-linux-gnu/sigc++-2.0/include;/usr/include/pango-1.0;/usr/include/harfbuzz;/usr/include/pango-1.0;/usr/include/fribidi;/usr/include/harfbuzz;/usr/include/cairo;/usr/include/pixman-1;/usr/include/uuid;/usr/include/freetype2;/usr/include/gdk-pixbuf-2.0;/usr/include/libpng16;/usr/include/x86_64-linux-gnu;/usr/include/libmount;/usr/include/blkid;/usr/include/glib-2.0;/usr/lib/x86_64-linux-gnu/glib-2.0/include
+GTKMM_LDFLAGS:INTERNAL=-L/usr/lib/x86_64-linux-gnu;-lgtkmm-3.0;-latkmm-1.6;-lgdkmm-3.0;-lgiomm-2.4;-lgtk-3;-lgdk-3;-latk-1.0;-lcairo-gobject;-lgio-2.0;-lpangomm-1.4;-lglibmm-2.4;-lcairomm-1.0;-lsigc-2.0;-lpangocairo-1.0;-lpango-1.0;-lharfbuzz;-lcairo;-lgdk_pixbuf-2.0;-lgobject-2.0;-lglib-2.0
+GTKMM_LDFLAGS_OTHER:INTERNAL=
+GTKMM_LIBDIR:INTERNAL=/usr/lib/x86_64-linux-gnu
+GTKMM_LIBRARIES:INTERNAL=gtkmm-3.0;atkmm-1.6;gdkmm-3.0;giomm-2.4;gtk-3;gdk-3;atk-1.0;cairo-gobject;gio-2.0;pangomm-1.4;glibmm-2.4;cairomm-1.0;sigc-2.0;pangocairo-1.0;pango-1.0;harfbuzz;cairo;gdk_pixbuf-2.0;gobject-2.0;glib-2.0
+GTKMM_LIBRARY_DIRS:INTERNAL=/usr/lib/x86_64-linux-gnu
+GTKMM_LIBS:INTERNAL=
+GTKMM_LIBS_L:INTERNAL=
+GTKMM_LIBS_OTHER:INTERNAL=
+GTKMM_LIBS_PATHS:INTERNAL=
+GTKMM_MODULE_NAME:INTERNAL=gtkmm-3.0
+GTKMM_PREFIX:INTERNAL=/usr
+GTKMM_STATIC_CFLAGS:INTERNAL=-pthread;-I/usr/local/include;-I/usr/include/gtkmm-3.0;-I/usr/lib/x86_64-linux-gnu/gtkmm-3.0/include;-I/usr/include/atkmm-1.6;-I/usr/lib/x86_64-linux-gnu/atkmm-1.6/include;-I/usr/include/gtk-3.0/unix-print;-I/usr/include/gdkmm-3.0;-I/usr/lib/x86_64-linux-gnu/gdkmm-3.0/include;-I/usr/include/giomm-2.4;-I/usr/lib/x86_64-linux-gnu/giomm-2.4/include;-I/usr/include/gtk-3.0;-I/usr/include/at-spi2-atk/2.0;-I/usr/include/at-spi-2.0;-I/usr/include/dbus-1.0;-I/usr/lib/x86_64-linux-gnu/dbus-1.0/include;-I/usr/include/gtk-3.0;-I/usr/include/gio-unix-2.0;-I/usr/include/cairo;-I/usr/include/atk-1.0;-I/usr/include/cairo;-I/usr/include/pangomm-1.4;-I/usr/lib/x86_64-linux-gnu/pangomm-1.4/include;-I/usr/include/glibmm-2.4;-I/usr/lib/x86_64-linux-gnu/glibmm-2.4/include;-I/usr/include/cairomm-1.0;-I/usr/lib/x86_64-linux-gnu/cairomm-1.0/include;-I/usr/include/sigc++-2.0;-I/usr/lib/x86_64-linux-gnu/sigc++-2.0/include;-I/usr/include/pango-1.0;-I/usr/include/harfbuzz;-I/usr/include/pango-1.0;-I/usr/include/fribidi;-I/usr/include/harfbuzz;-I/usr/include/cairo;-I/usr/include/pixman-1;-I/usr/include/uuid;-I/usr/include/freetype2;-I/usr/include/gdk-pixbuf-2.0;-I/usr/include/libpng16;-I/usr/include/x86_64-linux-gnu;-I/usr/include/libmount;-I/usr/include/blkid;-I/usr/include/glib-2.0;-I/usr/lib/x86_64-linux-gnu/glib-2.0/include
+GTKMM_STATIC_CFLAGS_I:INTERNAL=
+GTKMM_STATIC_CFLAGS_OTHER:INTERNAL=-pthread
+GTKMM_STATIC_INCLUDE_DIRS:INTERNAL=/usr/local/include;/usr/include/gtkmm-3.0;/usr/lib/x86_64-linux-gnu/gtkmm-3.0/include;/usr/include/atkmm-1.6;/usr/lib/x86_64-linux-gnu/atkmm-1.6/include;/usr/include/gtk-3.0/unix-print;/usr/include/gdkmm-3.0;/usr/lib/x86_64-linux-gnu/gdkmm-3.0/include;/usr/include/giomm-2.4;/usr/lib/x86_64-linux-gnu/giomm-2.4/include;/usr/include/gtk-3.0;/usr/include/at-spi2-atk/2.0;/usr/include/at-spi-2.0;/usr/include/dbus-1.0;/usr/lib/x86_64-linux-gnu/dbus-1.0/include;/usr/include/gtk-3.0;/usr/include/gio-unix-2.0;/usr/include/cairo;/usr/include/atk-1.0;/usr/include/cairo;/usr/include/pangomm-1.4;/usr/lib/x86_64-linux-gnu/pangomm-1.4/include;/usr/include/glibmm-2.4;/usr/lib/x86_64-linux-gnu/glibmm-2.4/include;/usr/include/cairomm-1.0;/usr/lib/x86_64-linux-gnu/cairomm-1.0/include;/usr/include/sigc++-2.0;/usr/lib/x86_64-linux-gnu/sigc++-2.0/include;/usr/include/pango-1.0;/usr/include/harfbuzz;/usr/include/pango-1.0;/usr/include/fribidi;/usr/include/harfbuzz;/usr/include/cairo;/usr/include/pixman-1;/usr/include/uuid;/usr/include/freetype2;/usr/include/gdk-pixbuf-2.0;/usr/include/libpng16;/usr/include/x86_64-linux-gnu;/usr/include/libmount;/usr/include/blkid;/usr/include/glib-2.0;/usr/lib/x86_64-linux-gnu/glib-2.0/include
+GTKMM_STATIC_LDFLAGS:INTERNAL=-L/usr/local/lib;-L/usr/lib/x86_64-linux-gnu;-L/usr/lib;-L/usr/lib/x86_64-linux-gnu;-lgtkmm-3.0;-latkmm-1.6;-lgdkmm-3.0;-lgiomm-2.4;-lgtk-3;-latk-bridge-2.0;-latspi;-lXtst;-ldbus-1;-lsystemd;-Wl,--export-dynamic;-lgdk-3;-lXinerama;-lXi;-lXrandr;-lXcursor;-lXcomposite;-lXdamage;-lXfixes;-lxkbcommon;-lwayland-cursor;-lwayland-egl;-lwayland-client;-lm;-pthread;-lepoxy;-ldl;-lGL;-lEGL;-latk-1.0;-lcairo-gobject;-lpangomm-1.4;-lglibmm-2.4;-lcairomm-1.0;-lsigc-2.0;-lpangocairo-1.0;-lm;-lpangoft2-1.0;-lm;-lharfbuzz-gobject;-lpango-1.0;-lm;-lfribidi;-lthai;-ldatrie;-lXft;-lharfbuzz;-lm;-lgraphite2;-lcairo;-lz;-lpixman-1;-lfontconfig;-luuid;-lexpat;-lm;-lfreetype;-lbrotlidec;-lbrotlicommon;-lxcb-shm;-lxcb-render;-lXrender;-lXext;-lX11;-lpthread;-lxcb;-lXau;-lXdmcp;-lgdk_pixbuf-2.0;-lm;-lpng16;-lm;-lz;-lm;-ljpeg;-ltiff;-lwebp;-lzstd;-llzma;-ljbig;-ljpeg;-ldeflate;-lz;-lm;-lgio-2.0;-lgmodule-2.0;-pthread;-lz;-lmount;-ldl;-lblkid;-lselinux;-lsepol;-lpcre2-8;-lgobject-2.0;-lffi;-lglib-2.0;-pthread;-lm;-lpcre
+GTKMM_STATIC_LDFLAGS_OTHER:INTERNAL=-Wl,--export-dynamic;-pthread
+GTKMM_STATIC_LIBDIR:INTERNAL=
+GTKMM_STATIC_LIBRARIES:INTERNAL=gtkmm-3.0;atkmm-1.6;gdkmm-3.0;giomm-2.4;gtk-3;atk-bridge-2.0;atspi;Xtst;dbus-1;systemd;gdk-3;Xinerama;Xi;Xrandr;Xcursor;Xcomposite;Xdamage;Xfixes;xkbcommon;wayland-cursor;wayland-egl;wayland-client;m;epoxy;dl;GL;EGL;atk-1.0;cairo-gobject;pangomm-1.4;glibmm-2.4;cairomm-1.0;sigc-2.0;pangocairo-1.0;m;pangoft2-1.0;m;harfbuzz-gobject;pango-1.0;m;fribidi;thai;datrie;Xft;harfbuzz;m;graphite2;cairo;z;pixman-1;fontconfig;uuid;expat;m;freetype;brotlidec;brotlicommon;xcb-shm;xcb-render;Xrender;Xext;X11;pthread;xcb;Xau;Xdmcp;gdk_pixbuf-2.0;m;png16;m;z;m;jpeg;tiff;webp;zstd;lzma;jbig;jpeg;deflate;z;m;gio-2.0;gmodule-2.0;z;mount;dl;blkid;selinux;sepol;pcre2-8;gobject-2.0;ffi;glib-2.0;m;pcre
+GTKMM_STATIC_LIBRARY_DIRS:INTERNAL=/usr/local/lib;/usr/lib/x86_64-linux-gnu;/usr/lib;/usr/lib/x86_64-linux-gnu
+GTKMM_STATIC_LIBS:INTERNAL=
+GTKMM_STATIC_LIBS_L:INTERNAL=
+GTKMM_STATIC_LIBS_OTHER:INTERNAL=
+GTKMM_STATIC_LIBS_PATHS:INTERNAL=
+GTKMM_VERSION:INTERNAL=3.24.5
+GTKMM_gtkmm-3.0_INCLUDEDIR:INTERNAL=
+GTKMM_gtkmm-3.0_LIBDIR:INTERNAL=
+GTKMM_gtkmm-3.0_PREFIX:INTERNAL=
+GTKMM_gtkmm-3.0_VERSION:INTERNAL=
 //Have symbol alarm
 HAVE_ALARM:INTERNAL=1
 //Have include stdio.h;inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;sys/xattr.h;alloca.h
@@ -1652,7 +1823,11 @@ _OPENSSL_openssl_INCLUDEDIR:INTERNAL=
 _OPENSSL_openssl_LIBDIR:INTERNAL=
 _OPENSSL_openssl_PREFIX:INTERNAL=
 _OPENSSL_openssl_VERSION:INTERNAL=
+__pkg_config_arguments_GLIB:INTERNAL=REQUIRED;glib-2.0
+__pkg_config_arguments_GTKMM:INTERNAL=gtkmm-3.0
 __pkg_config_arguments__OPENSSL:INTERNAL=QUIET;openssl
+__pkg_config_checked_GLIB:INTERNAL=1
+__pkg_config_checked_GTKMM:INTERNAL=1
 __pkg_config_checked__OPENSSL:INTERNAL=1
 //Result of TRY_COMPILE
 compile_result_unused:INTERNAL=FALSE
@@ -1668,6 +1843,48 @@ curl_cv_func_send_test:INTERNAL=1
 curl_cv_recv:INTERNAL=1
 //Test curl_cv_send
 curl_cv_send:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_GLIB_glib-2.0
+pkgcfg_lib_GLIB_glib-2.0-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_GTKMM_atk-1.0
+pkgcfg_lib_GTKMM_atk-1.0-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_GTKMM_atkmm-1.6
+pkgcfg_lib_GTKMM_atkmm-1.6-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_GTKMM_cairo
+pkgcfg_lib_GTKMM_cairo-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_GTKMM_cairo-gobject
+pkgcfg_lib_GTKMM_cairo-gobject-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_GTKMM_cairomm-1.0
+pkgcfg_lib_GTKMM_cairomm-1.0-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_GTKMM_gdk-3
+pkgcfg_lib_GTKMM_gdk-3-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_GTKMM_gdk_pixbuf-2.0
+pkgcfg_lib_GTKMM_gdk_pixbuf-2.0-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_GTKMM_gdkmm-3.0
+pkgcfg_lib_GTKMM_gdkmm-3.0-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_GTKMM_gio-2.0
+pkgcfg_lib_GTKMM_gio-2.0-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_GTKMM_giomm-2.4
+pkgcfg_lib_GTKMM_giomm-2.4-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_GTKMM_glib-2.0
+pkgcfg_lib_GTKMM_glib-2.0-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_GTKMM_glibmm-2.4
+pkgcfg_lib_GTKMM_glibmm-2.4-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_GTKMM_gobject-2.0
+pkgcfg_lib_GTKMM_gobject-2.0-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_GTKMM_gtk-3
+pkgcfg_lib_GTKMM_gtk-3-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_GTKMM_gtkmm-3.0
+pkgcfg_lib_GTKMM_gtkmm-3.0-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_GTKMM_harfbuzz
+pkgcfg_lib_GTKMM_harfbuzz-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_GTKMM_pango-1.0
+pkgcfg_lib_GTKMM_pango-1.0-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_GTKMM_pangocairo-1.0
+pkgcfg_lib_GTKMM_pangocairo-1.0-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_GTKMM_pangomm-1.4
+pkgcfg_lib_GTKMM_pangomm-1.4-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_GTKMM_sigc-2.0
+pkgcfg_lib_GTKMM_sigc-2.0-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib__OPENSSL_crypto
 pkgcfg_lib__OPENSSL_crypto-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib__OPENSSL_ssl

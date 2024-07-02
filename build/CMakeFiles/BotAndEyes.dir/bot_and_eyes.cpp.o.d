@@ -1,6 +1,6 @@
 CMakeFiles/BotAndEyes.dir/bot_and_eyes.cpp.o: \
  /home/yaba/Sandbox/PiMetis/bot_and_eyes.cpp /usr/include/stdc-predef.h \
- /home/yaba/Sandbox/PiMetis/teste_ia/pi_metis_eyes.hpp \
+ /home/yaba/Sandbox/PiMetis/pi_metis_ia/pi_metis_eyes.hpp \
  /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -392,7 +392,8 @@ CMakeFiles/BotAndEyes.dir/bot_and_eyes.cpp.o: \
  /usr/include/opencv4/opencv2/video.hpp \
  /usr/include/opencv4/opencv2/video/tracking.hpp \
  /usr/include/opencv4/opencv2/video/background_segm.hpp \
- /home/yaba/Sandbox/PiMetis/teste_telegram/pi_metis_bot.hpp \
+ /home/yaba/Sandbox/PiMetis/pi_metis_ia/frame_provider.hpp \
+ /home/yaba/Sandbox/PiMetis/pi_metis_bot/pi_metis_bot.hpp \
  /home/yaba/Sandbox/PiMetis/build/_deps/cpr-src/include/cpr/cpr.h \
  /home/yaba/Sandbox/PiMetis/build/_deps/cpr-src/include/cpr/api.h \
  /usr/include/c++/11/future /usr/include/c++/11/condition_variable \

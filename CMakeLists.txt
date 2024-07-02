@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
-project(TelegramBot)
+project(main)
 
 set(CMAKE_CXX_STANDARD 17)
 
@@ -13,6 +13,27 @@ find_package(nlohmann_json 3.2.0 REQUIRED)
 find_package(OpenCV REQUIRED)
 include_directories( ${OpenCV_INCLUDE_DIRS} )
 
-add_executable(BotAndEyes bot_and_eyes.cpp teste_telegram/pi_metis_bot.cpp teste_ia/pi_metis_eyes.cpp)
+find_package(PkgConfig)
+pkg_check_modules(GTKMM gtkmm-3.0)
+pkg_check_modules(GLIB REQUIRED glib-2.0)
 
-target_link_libraries(BotAndEyes PRIVATE cpr::cpr nlohmann_json::nlohmann_json ${OpenCV_LIBS})
+include_directories(${GTKMM_INCLUDE_DIRS})
+link_directories(${GTKMM_LIBRARY_DIRS})
+
+include_directories(${GLIB_INCLUDE_DIRS})
+link_directories(${GLIB_LIBRARY_DIRS})
+
+add_subdirectory(pi_metis_bot)
+add_subdirectory(pi_metis_gui)
+add_subdirectory(pi_metis_ia)
+add_subdirectory(pi_metis_stream)
+
+add_executable(main main.cpp)
+
+target_link_libraries(main PRIVATE
+        pi_metis_bot
+        pi_metis_ia
+        pi_metis_gui
+        pi_metis_stream        
+        cpr::cpr nlohmann_json::nlohmann_json ${OpenCV_LIBS} ${GTKMM_LIBRARIES} ${GLIB_LIBRARIES})
+

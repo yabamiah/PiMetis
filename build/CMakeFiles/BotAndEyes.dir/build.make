@@ -83,46 +83,110 @@ CMakeFiles/BotAndEyes.dir/bot_and_eyes.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BotAndEyes.dir/bot_and_eyes.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yaba/Sandbox/PiMetis/bot_and_eyes.cpp -o CMakeFiles/BotAndEyes.dir/bot_and_eyes.cpp.s
 
-CMakeFiles/BotAndEyes.dir/teste_telegram/pi_metis_bot.cpp.o: CMakeFiles/BotAndEyes.dir/flags.make
-CMakeFiles/BotAndEyes.dir/teste_telegram/pi_metis_bot.cpp.o: ../teste_telegram/pi_metis_bot.cpp
-CMakeFiles/BotAndEyes.dir/teste_telegram/pi_metis_bot.cpp.o: CMakeFiles/BotAndEyes.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yaba/Sandbox/PiMetis/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/BotAndEyes.dir/teste_telegram/pi_metis_bot.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BotAndEyes.dir/teste_telegram/pi_metis_bot.cpp.o -MF CMakeFiles/BotAndEyes.dir/teste_telegram/pi_metis_bot.cpp.o.d -o CMakeFiles/BotAndEyes.dir/teste_telegram/pi_metis_bot.cpp.o -c /home/yaba/Sandbox/PiMetis/teste_telegram/pi_metis_bot.cpp
+CMakeFiles/BotAndEyes.dir/pi_metis_bot/pi_metis_bot.cpp.o: CMakeFiles/BotAndEyes.dir/flags.make
+CMakeFiles/BotAndEyes.dir/pi_metis_bot/pi_metis_bot.cpp.o: ../pi_metis_bot/pi_metis_bot.cpp
+CMakeFiles/BotAndEyes.dir/pi_metis_bot/pi_metis_bot.cpp.o: CMakeFiles/BotAndEyes.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yaba/Sandbox/PiMetis/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/BotAndEyes.dir/pi_metis_bot/pi_metis_bot.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BotAndEyes.dir/pi_metis_bot/pi_metis_bot.cpp.o -MF CMakeFiles/BotAndEyes.dir/pi_metis_bot/pi_metis_bot.cpp.o.d -o CMakeFiles/BotAndEyes.dir/pi_metis_bot/pi_metis_bot.cpp.o -c /home/yaba/Sandbox/PiMetis/pi_metis_bot/pi_metis_bot.cpp
 
-CMakeFiles/BotAndEyes.dir/teste_telegram/pi_metis_bot.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BotAndEyes.dir/teste_telegram/pi_metis_bot.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yaba/Sandbox/PiMetis/teste_telegram/pi_metis_bot.cpp > CMakeFiles/BotAndEyes.dir/teste_telegram/pi_metis_bot.cpp.i
+CMakeFiles/BotAndEyes.dir/pi_metis_bot/pi_metis_bot.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BotAndEyes.dir/pi_metis_bot/pi_metis_bot.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yaba/Sandbox/PiMetis/pi_metis_bot/pi_metis_bot.cpp > CMakeFiles/BotAndEyes.dir/pi_metis_bot/pi_metis_bot.cpp.i
 
-CMakeFiles/BotAndEyes.dir/teste_telegram/pi_metis_bot.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BotAndEyes.dir/teste_telegram/pi_metis_bot.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yaba/Sandbox/PiMetis/teste_telegram/pi_metis_bot.cpp -o CMakeFiles/BotAndEyes.dir/teste_telegram/pi_metis_bot.cpp.s
+CMakeFiles/BotAndEyes.dir/pi_metis_bot/pi_metis_bot.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BotAndEyes.dir/pi_metis_bot/pi_metis_bot.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yaba/Sandbox/PiMetis/pi_metis_bot/pi_metis_bot.cpp -o CMakeFiles/BotAndEyes.dir/pi_metis_bot/pi_metis_bot.cpp.s
 
-CMakeFiles/BotAndEyes.dir/teste_ia/pi_metis_eyes.cpp.o: CMakeFiles/BotAndEyes.dir/flags.make
-CMakeFiles/BotAndEyes.dir/teste_ia/pi_metis_eyes.cpp.o: ../teste_ia/pi_metis_eyes.cpp
-CMakeFiles/BotAndEyes.dir/teste_ia/pi_metis_eyes.cpp.o: CMakeFiles/BotAndEyes.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yaba/Sandbox/PiMetis/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/BotAndEyes.dir/teste_ia/pi_metis_eyes.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BotAndEyes.dir/teste_ia/pi_metis_eyes.cpp.o -MF CMakeFiles/BotAndEyes.dir/teste_ia/pi_metis_eyes.cpp.o.d -o CMakeFiles/BotAndEyes.dir/teste_ia/pi_metis_eyes.cpp.o -c /home/yaba/Sandbox/PiMetis/teste_ia/pi_metis_eyes.cpp
+CMakeFiles/BotAndEyes.dir/pi_metis_ia/pi_metis_eyes.cpp.o: CMakeFiles/BotAndEyes.dir/flags.make
+CMakeFiles/BotAndEyes.dir/pi_metis_ia/pi_metis_eyes.cpp.o: ../pi_metis_ia/pi_metis_eyes.cpp
+CMakeFiles/BotAndEyes.dir/pi_metis_ia/pi_metis_eyes.cpp.o: CMakeFiles/BotAndEyes.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yaba/Sandbox/PiMetis/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/BotAndEyes.dir/pi_metis_ia/pi_metis_eyes.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BotAndEyes.dir/pi_metis_ia/pi_metis_eyes.cpp.o -MF CMakeFiles/BotAndEyes.dir/pi_metis_ia/pi_metis_eyes.cpp.o.d -o CMakeFiles/BotAndEyes.dir/pi_metis_ia/pi_metis_eyes.cpp.o -c /home/yaba/Sandbox/PiMetis/pi_metis_ia/pi_metis_eyes.cpp
 
-CMakeFiles/BotAndEyes.dir/teste_ia/pi_metis_eyes.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BotAndEyes.dir/teste_ia/pi_metis_eyes.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yaba/Sandbox/PiMetis/teste_ia/pi_metis_eyes.cpp > CMakeFiles/BotAndEyes.dir/teste_ia/pi_metis_eyes.cpp.i
+CMakeFiles/BotAndEyes.dir/pi_metis_ia/pi_metis_eyes.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BotAndEyes.dir/pi_metis_ia/pi_metis_eyes.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yaba/Sandbox/PiMetis/pi_metis_ia/pi_metis_eyes.cpp > CMakeFiles/BotAndEyes.dir/pi_metis_ia/pi_metis_eyes.cpp.i
 
-CMakeFiles/BotAndEyes.dir/teste_ia/pi_metis_eyes.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BotAndEyes.dir/teste_ia/pi_metis_eyes.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yaba/Sandbox/PiMetis/teste_ia/pi_metis_eyes.cpp -o CMakeFiles/BotAndEyes.dir/teste_ia/pi_metis_eyes.cpp.s
+CMakeFiles/BotAndEyes.dir/pi_metis_ia/pi_metis_eyes.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BotAndEyes.dir/pi_metis_ia/pi_metis_eyes.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yaba/Sandbox/PiMetis/pi_metis_ia/pi_metis_eyes.cpp -o CMakeFiles/BotAndEyes.dir/pi_metis_ia/pi_metis_eyes.cpp.s
+
+CMakeFiles/BotAndEyes.dir/pi_metis_ia/frame_provider.cpp.o: CMakeFiles/BotAndEyes.dir/flags.make
+CMakeFiles/BotAndEyes.dir/pi_metis_ia/frame_provider.cpp.o: ../pi_metis_ia/frame_provider.cpp
+CMakeFiles/BotAndEyes.dir/pi_metis_ia/frame_provider.cpp.o: CMakeFiles/BotAndEyes.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yaba/Sandbox/PiMetis/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/BotAndEyes.dir/pi_metis_ia/frame_provider.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BotAndEyes.dir/pi_metis_ia/frame_provider.cpp.o -MF CMakeFiles/BotAndEyes.dir/pi_metis_ia/frame_provider.cpp.o.d -o CMakeFiles/BotAndEyes.dir/pi_metis_ia/frame_provider.cpp.o -c /home/yaba/Sandbox/PiMetis/pi_metis_ia/frame_provider.cpp
+
+CMakeFiles/BotAndEyes.dir/pi_metis_ia/frame_provider.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BotAndEyes.dir/pi_metis_ia/frame_provider.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yaba/Sandbox/PiMetis/pi_metis_ia/frame_provider.cpp > CMakeFiles/BotAndEyes.dir/pi_metis_ia/frame_provider.cpp.i
+
+CMakeFiles/BotAndEyes.dir/pi_metis_ia/frame_provider.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BotAndEyes.dir/pi_metis_ia/frame_provider.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yaba/Sandbox/PiMetis/pi_metis_ia/frame_provider.cpp -o CMakeFiles/BotAndEyes.dir/pi_metis_ia/frame_provider.cpp.s
+
+CMakeFiles/BotAndEyes.dir/pi_metis_gui/tela_camera.cpp.o: CMakeFiles/BotAndEyes.dir/flags.make
+CMakeFiles/BotAndEyes.dir/pi_metis_gui/tela_camera.cpp.o: ../pi_metis_gui/tela_camera.cpp
+CMakeFiles/BotAndEyes.dir/pi_metis_gui/tela_camera.cpp.o: CMakeFiles/BotAndEyes.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yaba/Sandbox/PiMetis/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/BotAndEyes.dir/pi_metis_gui/tela_camera.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BotAndEyes.dir/pi_metis_gui/tela_camera.cpp.o -MF CMakeFiles/BotAndEyes.dir/pi_metis_gui/tela_camera.cpp.o.d -o CMakeFiles/BotAndEyes.dir/pi_metis_gui/tela_camera.cpp.o -c /home/yaba/Sandbox/PiMetis/pi_metis_gui/tela_camera.cpp
+
+CMakeFiles/BotAndEyes.dir/pi_metis_gui/tela_camera.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BotAndEyes.dir/pi_metis_gui/tela_camera.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yaba/Sandbox/PiMetis/pi_metis_gui/tela_camera.cpp > CMakeFiles/BotAndEyes.dir/pi_metis_gui/tela_camera.cpp.i
+
+CMakeFiles/BotAndEyes.dir/pi_metis_gui/tela_camera.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BotAndEyes.dir/pi_metis_gui/tela_camera.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yaba/Sandbox/PiMetis/pi_metis_gui/tela_camera.cpp -o CMakeFiles/BotAndEyes.dir/pi_metis_gui/tela_camera.cpp.s
+
+CMakeFiles/BotAndEyes.dir/pi_metis_gui/tela_inicial.cpp.o: CMakeFiles/BotAndEyes.dir/flags.make
+CMakeFiles/BotAndEyes.dir/pi_metis_gui/tela_inicial.cpp.o: ../pi_metis_gui/tela_inicial.cpp
+CMakeFiles/BotAndEyes.dir/pi_metis_gui/tela_inicial.cpp.o: CMakeFiles/BotAndEyes.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yaba/Sandbox/PiMetis/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/BotAndEyes.dir/pi_metis_gui/tela_inicial.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BotAndEyes.dir/pi_metis_gui/tela_inicial.cpp.o -MF CMakeFiles/BotAndEyes.dir/pi_metis_gui/tela_inicial.cpp.o.d -o CMakeFiles/BotAndEyes.dir/pi_metis_gui/tela_inicial.cpp.o -c /home/yaba/Sandbox/PiMetis/pi_metis_gui/tela_inicial.cpp
+
+CMakeFiles/BotAndEyes.dir/pi_metis_gui/tela_inicial.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BotAndEyes.dir/pi_metis_gui/tela_inicial.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yaba/Sandbox/PiMetis/pi_metis_gui/tela_inicial.cpp > CMakeFiles/BotAndEyes.dir/pi_metis_gui/tela_inicial.cpp.i
+
+CMakeFiles/BotAndEyes.dir/pi_metis_gui/tela_inicial.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BotAndEyes.dir/pi_metis_gui/tela_inicial.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yaba/Sandbox/PiMetis/pi_metis_gui/tela_inicial.cpp -o CMakeFiles/BotAndEyes.dir/pi_metis_gui/tela_inicial.cpp.s
+
+CMakeFiles/BotAndEyes.dir/pi_metis_stream/pi_metis_stream.cpp.o: CMakeFiles/BotAndEyes.dir/flags.make
+CMakeFiles/BotAndEyes.dir/pi_metis_stream/pi_metis_stream.cpp.o: ../pi_metis_stream/pi_metis_stream.cpp
+CMakeFiles/BotAndEyes.dir/pi_metis_stream/pi_metis_stream.cpp.o: CMakeFiles/BotAndEyes.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yaba/Sandbox/PiMetis/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/BotAndEyes.dir/pi_metis_stream/pi_metis_stream.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BotAndEyes.dir/pi_metis_stream/pi_metis_stream.cpp.o -MF CMakeFiles/BotAndEyes.dir/pi_metis_stream/pi_metis_stream.cpp.o.d -o CMakeFiles/BotAndEyes.dir/pi_metis_stream/pi_metis_stream.cpp.o -c /home/yaba/Sandbox/PiMetis/pi_metis_stream/pi_metis_stream.cpp
+
+CMakeFiles/BotAndEyes.dir/pi_metis_stream/pi_metis_stream.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BotAndEyes.dir/pi_metis_stream/pi_metis_stream.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yaba/Sandbox/PiMetis/pi_metis_stream/pi_metis_stream.cpp > CMakeFiles/BotAndEyes.dir/pi_metis_stream/pi_metis_stream.cpp.i
+
+CMakeFiles/BotAndEyes.dir/pi_metis_stream/pi_metis_stream.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BotAndEyes.dir/pi_metis_stream/pi_metis_stream.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yaba/Sandbox/PiMetis/pi_metis_stream/pi_metis_stream.cpp -o CMakeFiles/BotAndEyes.dir/pi_metis_stream/pi_metis_stream.cpp.s
 
 # Object files for target BotAndEyes
 BotAndEyes_OBJECTS = \
 "CMakeFiles/BotAndEyes.dir/bot_and_eyes.cpp.o" \
-"CMakeFiles/BotAndEyes.dir/teste_telegram/pi_metis_bot.cpp.o" \
-"CMakeFiles/BotAndEyes.dir/teste_ia/pi_metis_eyes.cpp.o"
+"CMakeFiles/BotAndEyes.dir/pi_metis_bot/pi_metis_bot.cpp.o" \
+"CMakeFiles/BotAndEyes.dir/pi_metis_ia/pi_metis_eyes.cpp.o" \
+"CMakeFiles/BotAndEyes.dir/pi_metis_ia/frame_provider.cpp.o" \
+"CMakeFiles/BotAndEyes.dir/pi_metis_gui/tela_camera.cpp.o" \
+"CMakeFiles/BotAndEyes.dir/pi_metis_gui/tela_inicial.cpp.o" \
+"CMakeFiles/BotAndEyes.dir/pi_metis_stream/pi_metis_stream.cpp.o"
 
 # External object files for target BotAndEyes
 BotAndEyes_EXTERNAL_OBJECTS =
 
 BotAndEyes: CMakeFiles/BotAndEyes.dir/bot_and_eyes.cpp.o
-BotAndEyes: CMakeFiles/BotAndEyes.dir/teste_telegram/pi_metis_bot.cpp.o
-BotAndEyes: CMakeFiles/BotAndEyes.dir/teste_ia/pi_metis_eyes.cpp.o
+BotAndEyes: CMakeFiles/BotAndEyes.dir/pi_metis_bot/pi_metis_bot.cpp.o
+BotAndEyes: CMakeFiles/BotAndEyes.dir/pi_metis_ia/pi_metis_eyes.cpp.o
+BotAndEyes: CMakeFiles/BotAndEyes.dir/pi_metis_ia/frame_provider.cpp.o
+BotAndEyes: CMakeFiles/BotAndEyes.dir/pi_metis_gui/tela_camera.cpp.o
+BotAndEyes: CMakeFiles/BotAndEyes.dir/pi_metis_gui/tela_inicial.cpp.o
+BotAndEyes: CMakeFiles/BotAndEyes.dir/pi_metis_stream/pi_metis_stream.cpp.o
 BotAndEyes: CMakeFiles/BotAndEyes.dir/build.make
 BotAndEyes: _deps/cpr-build/cpr/libcpr.so.1.9.0
 BotAndEyes: /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.4.5.4d
@@ -184,7 +248,7 @@ BotAndEyes: /usr/lib/x86_64-linux-gnu/libopencv_photo.so.4.5.4d
 BotAndEyes: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.4.5.4d
 BotAndEyes: /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.5.4d
 BotAndEyes: CMakeFiles/BotAndEyes.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yaba/Sandbox/PiMetis/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable BotAndEyes"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yaba/Sandbox/PiMetis/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable BotAndEyes"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/BotAndEyes.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

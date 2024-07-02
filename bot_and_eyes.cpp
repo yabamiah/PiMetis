@@ -1,5 +1,5 @@
-#include "teste_ia/pi_metis_eyes.hpp"
-#include "teste_telegram/pi_metis_bot.hpp"
+#include "pi_metis_ia/pi_metis_eyes.hpp"
+#include "pi_metis_bot/pi_metis_bot.hpp"
 
 int main()
 {
