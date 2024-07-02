@@ -1611,6 +1611,6 @@ pi_metis_gui/CMakeFiles/pi_metis_gui.dir/tela_camera.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
  /usr/include/c++/11/bits/fstream.tcc \
  /home/yaba/Sandbox/PiMetis/pi_metis_ia/pi_metis_eyes.hpp \
- /usr/include/c++/11/csignal \
+ /usr/include/c++/11/csignal /usr/include/c++/11/atomic \
  /home/yaba/Sandbox/PiMetis/pi_metis_ia/frame_provider.hpp \
  /home/yaba/Sandbox/PiMetis/pi_metis_ia/frame_provider.hpp

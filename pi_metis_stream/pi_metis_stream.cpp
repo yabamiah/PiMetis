@@ -7,9 +7,17 @@ VideoStreamer::VideoStreamer(FrameProvider& provider)
 
 void VideoStreamer::start()
 {
-    std::thread ngrokThread(&VideoStreamer::create_ngrok_server, this);
-    ngrokThread.join();
-
+    if (!this->ngrokThread.joinable())
+    {
+        this->ngrokThread = std::thread(&VideoStreamer::create_ngrok_server, this);
+        this->ngrokThread.join();
+    }
+    else
+    {
+        std::cerr << "Não foi possível criar o servidor ngrok.\n";
+    }
+    // std::thread ngrokThread(&VideoStreamer::create_ngrok_server, this);
+    
     svr.Get("/", [this](const httplib::Request &, httplib::Response &res) {
         this->handle_index(res);
     });
@@ -19,6 +27,15 @@ void VideoStreamer::start()
     });
 
     svr.listen("localhost", 5000);
+}
+
+void VideoStreamer::stop()
+{
+    if (svr.is_running())
+    {
+        svr.stop();
+        system("pkill -9 -f ngrok");
+    }
 }
 
 void VideoStreamer::handle_video_feed(httplib::Response &res)
@@ -70,10 +87,11 @@ void VideoStreamer::handle_index(httplib::Response &res)
 
 void VideoStreamer::create_ngrok_server()
 {
-    system("ngrok http 5000 --log=stdout > ngrok.log &");
+    system("pkill -9 -f ngrok");    
+    system("ngrok http 5000 --log=stdout > /home/yaba/Sandbox/PiMetis/pi_metis_stream/ngrok.log &");
     std::this_thread::sleep_for(std::chrono::seconds(5));
 
-    std::ifstream log_file("ngrok.log");
+    std::ifstream log_file("/home/yaba/Sandbox/PiMetis/pi_metis_stream/ngrok.log");
     std::string line;
     std::string public_url;
 
@@ -88,9 +106,9 @@ void VideoStreamer::create_ngrok_server()
     
     log_file.close();
 
-    std::ofstream link_file("../servidor_link.txt");
+    std::ofstream link_file("/home/yaba/Sandbox/PiMetis/servidor_link.txt", std::ios::out | std::ios::trunc);
     link_file << public_url;
     link_file.close();
 
-    std::cout << " * Link do servidor ngrok: " << public_url << " -> http://127.0.0.1:5000" << std::endl;
+    // std::cout << " * Link do servidor ngrok: " << public_url << " -> http://127.0.0.1:5000" << std::endl;
 }

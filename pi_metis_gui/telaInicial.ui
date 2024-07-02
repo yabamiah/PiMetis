@@ -105,38 +105,15 @@ sistema deve notificar quanto ultrapassar: </property>
       </object>
     </child>
   </object>
-  <object class="GtkAboutDialog" id="ti_dialog1">
+  <object class="GtkImage" id="image3">
+    <property name="visible">True</property>
     <property name="can-focus">False</property>
-    <property name="type-hint">dialog</property>
-    <property name="program-name">PiMetis</property>
-    <property name="version">1.0</property>
-    <property name="comments" translatable="yes">Pimetis é um sistema de babá eletrônico automatizado com visão computacional para realizar contagem de pessoas e a identificação de objetos perigosos para crianças.</property>
-    <property name="website">https://github.com/yabamiah/PiMetis</property>
-    <property name="authors">Vinícius Mendes Martins
-João Marcos Kubchek</property>
-    <property name="logo">/home/yaba/Sandbox/PiMetis/pi_metis_gui/assets/Pi-Métis_1.png</property>
-    <property name="license-type">mit-x11</property>
-    <child internal-child="vbox">
-      <object class="GtkBox">
-        <property name="can-focus">False</property>
-        <property name="orientation">vertical</property>
-        <property name="spacing">2</property>
-        <child internal-child="action_area">
-          <object class="GtkButtonBox">
-            <property name="can-focus">False</property>
-            <property name="layout-style">end</property>
-            <child>
-              <placeholder/>
-            </child>
-          </object>
-          <packing>
-            <property name="expand">False</property>
-            <property name="fill">False</property>
-            <property name="position">0</property>
-          </packing>
-        </child>
-      </object>
-    </child>
+    <property name="stock">gtk-no</property>
+  </object>
+  <object class="GtkImage" id="image4">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="stock">gtk-yes</property>
   </object>
   <object class="GtkWindow" id="ti_window">
     <property name="can-focus">False</property>
@@ -153,7 +130,7 @@ João Marcos Kubchek</property>
             <property name="height-request">500</property>
             <property name="visible">True</property>
             <property name="can-focus">False</property>
-            <property name="pixbuf">/home/yaba/Sandbox/PiMetis/pi_metis_gui/assets/Pi-Métis_1.png</property>
+            <property name="pixbuf">assets/Pi-Métis_1.png</property>
           </object>
           <packing>
             <property name="x">281</property>
@@ -161,7 +138,7 @@ João Marcos Kubchek</property>
           </packing>
         </child>
         <child>
-          <object class="GtkBox">
+          <object class="GtkBox" id="ti_box">
             <property name="width-request">254</property>
             <property name="height-request">193</property>
             <property name="visible">True</property>
@@ -172,6 +149,37 @@ João Marcos Kubchek</property>
             <property name="spacing">16</property>
             <property name="homogeneous">True</property>
             <child>
+              <object class="GtkButton" id="ti_button5">
+                <property name="label" translatable="yes">Ligar PiMetis</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <property name="image">image3</property>
+                <property name="image-position">right</property>
+                <property name="always-show-image">True</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="ti_button6">
+                <property name="label" translatable="yes">Ligar PiMetis</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <property name="image">image4</property>
+                <property name="image-position">right</property>
+                <property name="always-show-image">True</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
               <object class="GtkButton" id="ti_button3">
                 <property name="label" translatable="yes">Câmeras</property>
                 <property name="visible">True</property>
@@ -181,7 +189,7 @@ João Marcos Kubchek</property>
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">True</property>
-                <property name="position">0</property>
+                <property name="position">2</property>
               </packing>
             </child>
             <child>
@@ -194,7 +202,7 @@ João Marcos Kubchek</property>
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">True</property>
-                <property name="position">1</property>
+                <property name="position">3</property>
               </packing>
             </child>
           </object>
@@ -233,6 +241,39 @@ João Marcos Kubchek</property>
           <packing>
             <property name="x">969</property>
             <property name="y">17</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkAboutDialog" id="ti_dialog1">
+    <property name="can-focus">False</property>
+    <property name="type-hint">dialog</property>
+    <property name="program-name">PiMetis</property>
+    <property name="version">1.0</property>
+    <property name="comments" translatable="yes">Pimetis é um sistema de babá eletrônico automatizado com visão computacional para realizar contagem de pessoas e a identificação de objetos perigosos para crianças.</property>
+    <property name="website">https://github.com/yabamiah/PiMetis</property>
+    <property name="authors">Vinícius Mendes Martins
+João Marcos Kubchek</property>
+    <property name="logo">assets/Pi-Métis_1.png</property>
+    <property name="license-type">mit-x11</property>
+    <child internal-child="vbox">
+      <object class="GtkBox">
+        <property name="can-focus">False</property>
+        <property name="orientation">vertical</property>
+        <property name="spacing">2</property>
+        <child internal-child="action_area">
+          <object class="GtkButtonBox">
+            <property name="can-focus">False</property>
+            <property name="layout-style">end</property>
+            <child>
+              <placeholder/>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">False</property>
+            <property name="position">0</property>
           </packing>
         </child>
       </object>

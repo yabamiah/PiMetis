@@ -1,7 +1,7 @@
 #include "pi_metis_bot.hpp"
 
 telegram_bot::telegram_bot(const std::string &token) 
-    : token(token), image_path("/home/yaba/Sandbox/PiMetis/teste_ia/person.jpg")
+    : token(token), image_path("/home/yaba/Sandbox/PiMetis/pi_metis_ia/person.jpg")
 {
     this->url = this->url + token;
 
@@ -13,7 +13,7 @@ telegram_bot::telegram_bot(const std::string &token)
 }
  
 telegram_bot::telegram_bot(const std::string &token, const std::string& chat_id) 
-    : token(token), chat_id(chat_id), image_path("/home/yaba/Sandbox/PiMetis/teste_ia/person.jpg")
+    : token(token), chat_id(chat_id), image_path("/home/yaba/Sandbox/PiMetis/pi_metis_ia/person.jpg")
 {
     this->url = this->url + token;
     
@@ -96,14 +96,16 @@ void telegram_bot::send_text_message(const std::string& text_message)
     }
 }
 
-void telegram_bot::send_warning()
+void telegram_bot::send_warning(const std::string& message_, const std::string& photo)
 {
-    std::string message = "Uma pessoa foi detectado às " + this->get_time() + " segue uma foto tirada no instante.\n";
+    std::string message = message_ + "\nÁs " + this->get_time() + " segue uma foto tirada no instante.\n" 
+                                   + "O link da transmissão ao vivo da câmera: " + this->read_file_server() + "\n";
+
     this->send_text_message(message);
 
-    if (fileExists(this->image_path))
+    if (fileExists(photo))
     {
-        this->send_photo_message();
+        this->send_photo_message(photo);
     }
 }
 
@@ -113,7 +115,7 @@ bool telegram_bot::fileExists(const std::string& filename) const
     return file.good();
 }
 
-void telegram_bot::send_photo_message()
+void telegram_bot::send_photo_message(const std::string& image_path_)
 {
     if (this->chat_id.empty())
     {
@@ -121,14 +123,15 @@ void telegram_bot::send_photo_message()
     } 
     else
     {
-        if (!fileExists(this->image_path)) 
+        if (!fileExists(image_path_)) 
         {
-            std::cerr << "Erro: Arquivo " << this->image_path << " não existe." << std::endl;
+            std::cerr << "Erro: Arquivo " << image_path_ << " não existe." << std::endl;
             return;
         }
+
         std::string sm = "/sendPhoto";
 
-        cpr::Response r = cpr::Get(cpr::Url{this->url + sm}, cpr::Multipart {{"chat_id", this->chat_id}, {"photo", cpr::File{this->image_path}}});
+        cpr::Response r = cpr::Get(cpr::Url{this->url + sm}, cpr::Multipart {{"chat_id", this->chat_id}, {"photo", cpr::File{image_path_}}});
 
         if (r.status_code == 200) 
         {
@@ -150,7 +153,7 @@ void telegram_bot::send_photo_message()
         }
         else
         {
-            std::cout << "Falha ao enviar mensagem: " << r.status_code << std::endl;
+            std::cout << "Falha ao enviar foto: " << r.status_code << std::endl;
             std::cout << r.text << std::endl;
         }
     }
@@ -181,7 +184,20 @@ std::string telegram_bot::read_file_to_vector(const std::string& filename) const
 std::string telegram_bot::read_file_server() const
 {
     std::string server_link;
-    std::fstream(this->link_server_path, std::ios::in) >> server_link;
+
+    std::ofstream ofs(this->link_server_path, std::ios::out | std::ios::trunc);
+    if (!ofs.is_open()) 
+    {
+        throw std::runtime_error("Failed to open file for clearing: " + this->link_server_path);
+    }
+    
+
+    std::fstream(this->link_server_path, std::ios::in | std::ios::trunc) >> server_link;
+    do
+    {
+        std::fstream(this->link_server_path, std::ios::in) >> server_link;
+    } while (server_link.empty());
+    
 
     return server_link;
 }
@@ -228,10 +244,11 @@ void telegram_bot::command_handler(std::string command, nlohmann::json response)
     if (command.compare("/start") == 0)
     {
         for (const auto& update : response["result"]) {
-                    if (update.contains("chat")) {
-                        int64_t chatIdNumber = update["message"]["chat"]["id"].get<int64_t>();
-                        this->chat_id = std::to_string(chatIdNumber);
-                    }
+            if (update.contains("chat")) 
+            {
+                int64_t chatIdNumber = update["message"]["chat"]["id"].get<int64_t>();
+                this->chat_id = std::to_string(chatIdNumber);
+            }
         }
 
         this->send_text_message("Bem-vindo ao PiMetis! Você sera cadastrado no sistema de babá eletrônica.");
@@ -239,17 +256,11 @@ void telegram_bot::command_handler(std::string command, nlohmann::json response)
 
     if (command.compare("/espiar") == 0)
     {
-        // std::time_t time = std::time({});
-        // char buff[std::size("dd/mm/yyyy hh:mm:ss")];
-        // std::strftime(std::data(buff), std::size(buff),
-        //               "%D %T", std::localtime(&time));
-
-        // std::string buffTime(buff);
         std::string mensagem = "Espiando às " + this->get_time() + "\n";
         this->send_text_message(mensagem);
         if (fileExists(this->image_path))
         {
-            this->send_photo_message();
+            this->send_photo_message(this->image_path);
         }
     }
 
@@ -275,7 +286,7 @@ std::string telegram_bot::get_time() const
     std::time_t time = std::time({});
     char buff[std::size("dd/mm/yyyy hh:mm:ss")];
     std::strftime(std::data(buff), std::size(buff),
-                    "%D %T", std::localtime(&time));
+                    "%d/%m/%y %T", std::localtime(&time));
 
     std::string buffTime(buff);
 

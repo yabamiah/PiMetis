@@ -1,3 +1,0 @@
-/home/yaba/Sandbox/PiMetis/teste_ia/build/CMakeFiles/PiMetisEyes.dir
-/home/yaba/Sandbox/PiMetis/teste_ia/build/CMakeFiles/edit_cache.dir
-/home/yaba/Sandbox/PiMetis/teste_ia/build/CMakeFiles/rebuild_cache.dir

@@ -16,7 +16,7 @@ class telegram_bot
 {
     private:
         std::string url = "https://api.telegram.org/bot";
-        std::string link_server_path = "../servidor_link.txt";
+        std::string link_server_path = "/home/yaba/Sandbox/PiMetis/servidor_link.txt";
         std::string image_path;
         std::string server_link;
         std::string token;
@@ -30,8 +30,8 @@ class telegram_bot
         std::string get_updates() const;
         void set_chatId( const std::string& chat_id );
         void send_text_message( const std::string& text_message );
-        void send_warning();
-        void send_photo_message();
+        void send_warning( const std::string& message_, const std::string& photo );
+        void send_photo_message( const std::string& image_path_ );
         std::string read_file_server() const;
         bool fileExists( const std::string& filename ) const;
 

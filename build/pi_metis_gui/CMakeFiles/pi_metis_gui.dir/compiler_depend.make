@@ -1748,6 +1748,7 @@ pi_metis_gui/CMakeFiles/pi_metis_gui.dir/tela_camera.cpp.o: ../pi_metis_gui/tela
   /usr/include/c++/11/bits/fstream.tcc \
   ../pi_metis_ia/pi_metis_eyes.hpp \
   /usr/include/c++/11/csignal \
+  /usr/include/c++/11/atomic \
   ../pi_metis_ia/frame_provider.hpp \
   ../pi_metis_ia/frame_provider.hpp
 
@@ -3499,12 +3500,15 @@ pi_metis_gui/CMakeFiles/pi_metis_gui.dir/tela_inicial.cpp.o: ../pi_metis_gui/tel
   ../pi_metis_ia/frame_provider.hpp \
   ../pi_metis_ia/pi_metis_eyes.hpp \
   /usr/include/c++/11/csignal \
+  /usr/include/c++/11/atomic \
   ../pi_metis_ia/frame_provider.hpp
 
 
 ../pi_metis_gui/tela_inicial.cpp:
 
 ../pi_metis_ia/frame_provider.hpp:
+
+/usr/include/c++/11/atomic:
 
 /usr/include/c++/11/csignal:
 

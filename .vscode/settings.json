@@ -81,7 +81,8 @@
         "coroutine": "cpp",
         "csignal": "cpp",
         "source_location": "cpp",
-        "regex": "cpp"
+        "regex": "cpp",
+        "*.ipp": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }

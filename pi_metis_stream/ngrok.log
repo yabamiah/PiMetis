@@ -1,12 +1,9 @@
-t=2024-06-18T15:58:42-0300 lvl=info msg="no configuration paths supplied"
-t=2024-06-18T15:58:42-0300 lvl=info msg="using configuration at default config path" path=/home/yaba/.config/ngrok/ngrok.yml
-t=2024-06-18T15:58:42-0300 lvl=info msg="open config file" path=/home/yaba/.config/ngrok/ngrok.yml err=nil
-t=2024-06-18T15:58:42-0300 lvl=info msg="starting web service" obj=web addr=127.0.0.1:4040 allow_hosts=[]
-t=2024-06-18T15:58:42-0300 lvl=info msg="client session established" obj=tunnels.session
-t=2024-06-18T15:58:42-0300 lvl=info msg="tunnel session started" obj=tunnels.session
-t=2024-06-18T15:58:42-0300 lvl=info msg="started tunnel" obj=tunnels name=command_line addr=http://localhost:5000 url=https://ac9d-2804-d59-8442-e800-541b-33a0-5c45-eb29.ngrok-free.app
-t=2024-06-18T15:58:42-0300 lvl=info msg="update available" obj=updater
-t=2024-06-18T15:58:54-0300 lvl=info msg="join connections" obj=join id=1edb21b3277c l=[::1]:5000 r=[2804:d59:8442:e800:541b:33a0:5c45:eb29]:55550
-t=2024-06-18T15:58:54-0300 lvl=info msg="join connections" obj=join id=9dfdd1d92c71 l=[::1]:5000 r=[2804:d59:8442:e800:541b:33a0:5c45:eb29]:55550
-t=2024-06-18T15:59:10-0300 lvl=info msg="received stop request" obj=app stopReq="{err:<nil> restart:false}"
-t=2024-06-18T15:59:10-0300 lvl=info msg="session closing" obj=tunnels.session err=nil
+t=2024-07-02T16:19:36-0300 lvl=info msg="no configuration paths supplied"
+t=2024-07-02T16:19:36-0300 lvl=info msg="using configuration at default config path" path=/home/yaba/.config/ngrok/ngrok.yml
+t=2024-07-02T16:19:36-0300 lvl=info msg="open config file" path=/home/yaba/.config/ngrok/ngrok.yml err=nil
+t=2024-07-02T16:19:36-0300 lvl=info msg="starting web service" obj=web addr=127.0.0.1:4040 allow_hosts=[]
+t=2024-07-02T16:19:36-0300 lvl=info msg="client session established" obj=tunnels.session
+t=2024-07-02T16:19:36-0300 lvl=info msg="tunnel session started" obj=tunnels.session
+t=2024-07-02T16:19:36-0300 lvl=info msg="started tunnel" obj=tunnels name=command_line addr=http://localhost:5000 url=https://6693-2804-d59-8429-fd00-b57e-4905-db69-4107.ngrok-free.app
+t=2024-07-02T16:19:37-0300 lvl=info msg="update available" obj=updater
+t=2024-07-02T16:19:42-0300 lvl=info msg="join connections" obj=join id=85ad1a8673c8 l=[::1]:5000 r=149.154.161.245:34672

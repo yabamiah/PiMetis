@@ -1611,5 +1611,5 @@ pi_metis_gui/CMakeFiles/pi_metis_gui.dir/tela_inicial.cpp.o: \
  /usr/include/c++/11/bits/this_thread_sleep.h \
  /home/yaba/Sandbox/PiMetis/pi_metis_ia/frame_provider.hpp \
  /home/yaba/Sandbox/PiMetis/pi_metis_ia/pi_metis_eyes.hpp \
- /usr/include/c++/11/csignal \
+ /usr/include/c++/11/csignal /usr/include/c++/11/atomic \
  /home/yaba/Sandbox/PiMetis/pi_metis_ia/frame_provider.hpp

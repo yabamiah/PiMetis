@@ -17,9 +17,11 @@ class VideoStreamer
         VideoStreamer(FrameProvider& provider);
 
         void start();
+        void stop();
 
     private:
         FrameProvider& frame_provider;
+        std::thread ngrokThread;
         httplib::Server svr;
 
         void handle_video_feed(httplib::Response &res);

@@ -16,11 +16,10 @@
 class TelaCamera : public Gtk::Window
 {
 	public:
-		TelaCamera(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Builder>& refGlade);
+		TelaCamera(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Builder>& refGlade, FrameProvider& provider);
 		static TelaCamera* create(FrameProvider& provider);
-		void update_frame_provider(FrameProvider* provider);
 		// void pararCamera();
-		void atualizarImagem(cv::Mat &frame);
+		void atualizarImagem();
 
 	private:
         void on_tc_button1_clicked();
@@ -29,7 +28,7 @@ class TelaCamera : public Gtk::Window
 		Gtk::Image *tc_imagem;
 		Gtk::Button *tc_button1;
 		Glib::RefPtr<Gtk::Builder> tc_builder;
-		FrameProvider* frame_provider;
+		FrameProvider& frame_provider;
 };
 
 extern std::mutex imagemMutex;
