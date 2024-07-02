@@ -58,6 +58,8 @@ Para rodar este projeto é necessário instalar os seguintes pré-requisitos:
 - ngrok
 - curl
 - git
+
+
   ```sh
   sudo apt install g++ cmake libcurl4-openssl-dev libopencv-dev ngrok curl git
   ```
@@ -77,7 +79,8 @@ Siga as instruções abaixo para compilar e gerar o executável do sistema.
    ```
 4. Compile o sistema
    ```sh
-   mkdir build
+   cd source
+   mkdir build && cd build
    cmake .
    make
    ```
