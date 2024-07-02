@@ -6,6 +6,7 @@ mkdir build && cd build
 cmake ..
 make
 sudo make install
+rm -rf json
 
 cd
 
@@ -15,3 +16,4 @@ mkdir build && cd build
 cmake ..
 make
 sudo make install
+rm -rf cpr
