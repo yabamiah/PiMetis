@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC -g -shared -Wl,-soname,libpi_metis_stream.so -o libpi_metis_stream.so CMakeFiles/pi_metis_stream.dir/pi_metis_stream.cpp.o 

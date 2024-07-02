@@ -1,7 +1,7 @@
 <br/>
 <div align="center">
 <a href="https://github.com/yabamiah/PiMetis">
-<img src="https://github.com/yabamiah/PiMetis/blob/main/teste_gui/assets/Pi-M%C3%A9tis-removebg-preview.png" alt="Logo" width="80" height="80">
+<img src="assets/PiMetisLogo.png" alt="Logo" width="80" height="80">
 </a>
 <h3 align="center">PiMetis</h3>
 <p align="center">
@@ -17,9 +17,9 @@ Um sistema embarcado de babá eletrônico com visão computacional
 
 ## Sobre o Projeto
 
-![Captura do Produto](https://source.unsplash.com/random/1920x1080)
+![Captura do Produto](/assets/screenshot_pi_metis.png)
 
-PiMetis é um projeto acadêmico, desenvolvido para o projeto final da matéria Sistemas Opoeracionais Embarcados - SOE da Universidade de Brasília, ministrado pelo professor Diogo Caetano. 
+PiMetis é um projeto acadêmico, desenvolvido para o projeto final da matéria [Sistemas Operacionais Embarcados](https://github.com/DiogoCaetanoGarcia/Sistemas_Embarcados) da Universidade de Brasília, ministrado pelo professor Diogo Caetano Garcia.
 
 PiMetis é um sistema visão computacional aplicado em sistema embarcado, mais especificamente na Raspberry Pi 3, cujo o objetivo é monitorar um cômodo da casa onde deseja monitorar situações inesperadas. Sendo detectado alguma dessas situações abaixo, o sistema notificará o usuário pelo Telegram. 
 
@@ -41,6 +41,7 @@ O PiMetis foi construído utilizando essas ferramentas e tecnologias:
 - [cpp-httplib](https://github.com/yhirose/cpp-httplib)
 - [Linux](https://github.com/torvalds/linux)
 - [Cmake](https://cmake.org/)
+- [Raspberry Pi OS](https://www.raspberrypi.com/software/operating-systems/)
 
 ## Começando
 
@@ -87,7 +88,7 @@ Para utilizar o sistema, é necessário apenas executar o binário e utilizá-lo
 
 ## Roteiro
 
-Para visualizar o roteiro do desenvolvimento do sistema, publicamos os relatórios do ponto de controle onde contém informações mais detalhadas da construção do PiMetis, desde o seu conceito incial, até a entrega da sua versão final. Os relatório podem ser visualizados [aqui]().
+Para visualizar o roteiro do desenvolvimento do sistema, publicamos os relatórios do ponto de controle onde contém informações mais detalhadas da construção do PiMetis, desde o seu conceito incial, até a entrega da sua versão final. Os relatório podem ser visualizados [aqui](https://github.com/yabamiah/PiMetis/tree/main/report).
 
 ## Contribuindo
 
