@@ -1,3 +1,0 @@
-/home/yaba/Sandbox/PiMetis/teste_transmissao/build/CMakeFiles/VideoStreamer.dir
-/home/yaba/Sandbox/PiMetis/teste_transmissao/build/CMakeFiles/edit_cache.dir
-/home/yaba/Sandbox/PiMetis/teste_transmissao/build/CMakeFiles/rebuild_cache.dir
