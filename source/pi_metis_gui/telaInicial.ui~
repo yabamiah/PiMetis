@@ -14,7 +14,6 @@
   </object>
   <object class="GtkDialog" id="ti_dialog2">
     <property name="can-focus">False</property>
-    <property name="title" translatable="yes">Configuração</property>
     <property name="type-hint">dialog</property>
     <child internal-child="vbox">
       <object class="GtkBox">
@@ -249,7 +248,6 @@ sistema deve notificar quanto ultrapassar: </property>
   </object>
   <object class="GtkAboutDialog" id="ti_dialog1">
     <property name="can-focus">False</property>
-    <property name="title" translatable="yes">Sobre</property>
     <property name="type-hint">dialog</property>
     <property name="program-name">PiMetis</property>
     <property name="version">1.0</property>

@@ -1,9 +1,9 @@
-t=2024-07-02T20:05:55-0300 lvl=info msg="no configuration paths supplied"
-t=2024-07-02T20:05:55-0300 lvl=info msg="using configuration at default config path" path=/home/yaba/.config/ngrok/ngrok.yml
-t=2024-07-02T20:05:55-0300 lvl=info msg="open config file" path=/home/yaba/.config/ngrok/ngrok.yml err=nil
-t=2024-07-02T20:05:55-0300 lvl=info msg="starting web service" obj=web addr=127.0.0.1:4040 allow_hosts=[]
-t=2024-07-02T20:05:55-0300 lvl=info msg="client session established" obj=tunnels.session
-t=2024-07-02T20:05:55-0300 lvl=info msg="tunnel session started" obj=tunnels.session
-t=2024-07-02T20:05:55-0300 lvl=info msg="started tunnel" obj=tunnels name=command_line addr=http://localhost:5000 url=https://a0c4-2804-d59-8429-fd00-c123-ac29-a9a5-c08e.ngrok-free.app
-t=2024-07-02T20:05:55-0300 lvl=info msg="update available" obj=updater
-t=2024-07-02T20:06:01-0300 lvl=info msg="join connections" obj=join id=69c7ac98d467 l=[::1]:5000 r=149.154.161.218:55286
+t=2024-07-04T08:29:03-0300 lvl=info msg="no configuration paths supplied"
+t=2024-07-04T08:29:03-0300 lvl=info msg="using configuration at default config path" path=/home/yaba/.config/ngrok/ngrok.yml
+t=2024-07-04T08:29:03-0300 lvl=info msg="open config file" path=/home/yaba/.config/ngrok/ngrok.yml err=nil
+t=2024-07-04T08:29:03-0300 lvl=info msg="starting web service" obj=web addr=127.0.0.1:4040 allow_hosts=[]
+t=2024-07-04T08:29:03-0300 lvl=info msg="client session established" obj=tunnels.session
+t=2024-07-04T08:29:03-0300 lvl=info msg="tunnel session started" obj=tunnels.session
+t=2024-07-04T08:29:03-0300 lvl=info msg="started tunnel" obj=tunnels name=command_line addr=http://localhost:5000 url=https://e921-2804-d59-8429-fd00-3e9c-82ba-a2d4-6c8e.ngrok-free.app
+t=2024-07-04T08:29:05-0300 lvl=info msg="update available" obj=updater
+t=2024-07-04T08:29:09-0300 lvl=info msg="join connections" obj=join id=3eb1ebb3f22e l=[::1]:5000 r=149.154.161.217:48790

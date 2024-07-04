@@ -2,7 +2,7 @@
 
 void detection_loop(VideoStreamer& streamer)
 {
-    telegram_bot pi_metis_bot("7132288406:AAGr8jjVtgQbD1VptDYure0pTn98EcohxBQ", "835554428");
+    telegram_bot pi_metis_bot("7132288406:AAGr8jjVtgQbD1VptDYure0pTn98EcohxBQ");
 
     while (true)
     {

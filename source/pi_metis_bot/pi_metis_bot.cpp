@@ -5,8 +5,6 @@ telegram_bot::telegram_bot(const std::string &token)
 {
     this->url = this->url + token;
 
-    this->server_link = read_file_server();
-
     std::thread bot_listenning(&telegram_bot::listen_commands, this);
 
     bot_listenning.detach();
@@ -243,12 +241,10 @@ void telegram_bot::command_handler(std::string command, nlohmann::json response)
 {
     if (command.compare("/start") == 0)
     {
-        for (const auto& update : response["result"]) {
-            if (update.contains("chat")) 
-            {
-                int64_t chatIdNumber = update["message"]["chat"]["id"].get<int64_t>();
-                this->chat_id = std::to_string(chatIdNumber);
-            }
+        if (!response["message"]["from"]["is_bot"].get<bool>())
+        {
+            int64_t chatIdNumber = response["message"]["chat"]["id"].get<int>();
+            this->chat_id = std::to_string(chatIdNumber);
         }
 
         this->send_text_message("Bem-vindo ao PiMetis! Você sera cadastrado no sistema de babá eletrônica.");
